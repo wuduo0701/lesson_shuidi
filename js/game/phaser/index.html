@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phaser</title>
+    <script src="https://cdn.bootcss.com/phaser/2.6.2/phaser.min.js"></script>
+</head>
+<body>
+    <div id="game"></div>
+    <!-- ul>li{$}*10 -->
+    <!-- <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul> -->
+    <script>
+        // 游戏框大小
+        const width = 800 , height = 600;      //width=900;常量，值不可改变
+        //Phaser 游戏框架提供Game对象，
+        const game = new Phaser.Game(width,height,Phaser.Auto,'#game',{
+            preload:preload,
+            create:create,
+            update:update
+        })
+        let back, //背景
+            mummy, //精灵
+            anim, //运动
+            loopText;
+        //预加载资源    游戏的通用
+        function preload() {
+            // back = game.add.image(0,-400,'lazur')
+            game.load.image('lazur','./thorn_lazur.png');
+            //精灵图
+            game.load.spritesheet('mummy','./metalslug_mummy37x45.png',37,45,18)
+        }
+        // 创建什么样的场景
+        function create() {
+            back = game.add.image(0,-400,'lazur');
+            back.scale.set(2);
+            back.smoothed = false;
+
+            mummy = game.add.sprite(200,360,'mummy',10)
+            mummy.scale.set(3);
+            mummy.smoothed = false;
+            anim=mummy.animations.add('walk');
+            anim.play(10,true);
+
+        }
+        function update() {
+            back.x -= 1;
+        }
+    //     const mrRight = {   //JSON  对象表达式
+    //         name: '王志浩',
+    //         age: 18
+    //     }
+    //     mrRight.age=19;
+    //     mrRight = 200;
+    var a =2 ; //window
+    {   //代码块
+         var a=1;    //es6 es5
+         console.log(a);
+         //var 块级作用域，没用，如果时let a=1,则会显示未定义
+         //js 定义变量，一定会找到相应的作用域在定义scope
+    }
+     a++;    //访问不到
+     console.log(a);
+        const items = document.querySelectorAll('ul>li');
+        //同步的
+        for(let i=0;i<items.length;i++){
+            // 事件 JS异步的
+            items[i].addEventListener('click',function() {
+                // 点击时才会发生
+                alert(i+1);      //显示的是最后的i 定义在window上
+            })
+        }
+        // for(let i=0;i<items.length;i++){
+        //     items[i].addEventListener('click',function() {
+        //         alert(i+1);      
+        //     })
+        // }
+        // for(let i=1;i<items.length;i++){
+        //     items[i].addEventListener('click',function() {
+        //         alert(i+1);      
+        //     })
+        // }
+    </script>
+</body>
+</html>
