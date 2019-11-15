@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 挂载点 mounted  DOM -->
+  <ul id="friends">
+    <li>占无数据</li>
+  </ul>
+  <script>
+  fetch('/students')
+    .then(data => data.json())
+    .then(data => {
+      // console.log(data);
+      document.getElementById('friends').innerHTML = data.map(item => {
+        return `
+          <li>
+            ${item.name}
+            ${item.hometown}
+            ${item.email}
+            ${item.phone}
+          </li>
+        `
+      }).join('')
+    })
+  // const friends = [{
+  //   name: '胡文凯',
+  //   hometown: '新余',
+  //   email: '1939108122@qq.com'
+  // }, {
+  //   name: '肖仡轩',
+  //   hometown: '抚州',
+  //   email: '226884981@qq.com'
+  // }];
+
+  // // window.onload = function() {
+  // //   //最佳时机 生命周期 晚了
+
+  // // }
+  // // DOM ready  .friends 挂载到页面上， 就可以开始。
+  // // 页面加载过程... 浏览器拿着html文件后，body 标签拿出来， 
+  // // 解析DOM树 看到html了
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   // friends -> ul 
+  //   // document
+  //   //   .querySelector('#friends')
+  //   //   .innerHTML =
+  //   document
+  //       .querySelector('#friends')
+  //       .innerHTML = '';
+  //   // es6 的字符串模板 
+  //   // friends.forEach(friend => {
+  //   //   document
+  //   //     .querySelector('#friends')
+  //   //     .innerHTML += `
+  //   //       <li>
+  //   //         ${friend.name} ${friend.hometown}
+  //   //       </li>
+  //   //     `
+  //   // });
+  //   // json数组 =》 html数组 
+  //   document.querySelector('#friends').innerHTML  = friends.map(friend => {
+  //     return `
+  //       <li>
+  //         ${friend.name}
+  //         ${friend.hometown}
+  //         ${friend.email}
+  //       </li>
+  //     `
+  //   }).join('')
+  //   // console.log(htmlArr, ul);
+    
+  // }) 
+
+  </script>
+</body>
+</html>

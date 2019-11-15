@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require('./node_modules/nodemailer/lib/nodemailer');
 
 let transporter = nodemailer.createTransport({
     service: 'qq' , //腾讯
