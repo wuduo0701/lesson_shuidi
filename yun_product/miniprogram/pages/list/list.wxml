@@ -1,0 +1,10 @@
+<block wx:for="{{products}}">
+    <van-card
+        price="{{Math.round(iten.view)}}"
+        desc="{{item.color}}"
+        title="{{item.title}}"
+        thumb="{{item.image}}"
+        data-id="{{item._id}}">
+
+    </van-card>
+</block>
