@@ -2,7 +2,7 @@
 // console.log(baz);        //3
 
 // let [a,...b] = [1,2,3,4,5,6];    // ...表示剩下的所有值
-// console.log(b);      //[ 1, 2, 3, 4, 5, 6 ]
+// console.log(b);      //[2, 3, 4, 5, 6 ]
 
 // let [foo] = 1;      //1 is not iterable(遍历器)
 // 有三类数据结构具备Itearable接口：数组，某些类似数组的的对象，map，set结构
@@ -11,13 +11,13 @@
 // console.log(a);      //a
 
 // let[a = 1] = [undefined]  //赋默认值是，es6使用严格相等运算符,undefined默认值会生效
-// let[b = 1] = [null]     //  但null不会生效 null不严格等于undefined
-// let[c = 1] = []
+// let[b = 1] = [null]     //  null不会生效 null不严格等于undefined
+// let[c = 1] = []          //我认为undefined相当于空白
 // console.log(a);     //1
 // console.log(b);        //null
 // console.log(c);     //1
 
-// let[x = y,y = 1] = []   //ReferenceError    x引用y时，y还没有赋值
+// let[x = y,y = 1] = []   //ReferenceError(引用错误)    x引用y时，y还没有赋值
 // console.log(x);
 
 // let {a,b} = {b:'a',a:'b'}       //数组的元素是按次序排列的，变量的取值由它的位置决定
@@ -40,9 +40,9 @@
 //         b:2
 //     };
 // }
-// var {x,y}= fun();
+// var {x,y}= fun();        //这里显示未定义  ***不是很清楚***
 //  console.log(x,y);
- // let {c,d} = {c:1,d:2};
+ // let {c,d} = {c:1,d:2};     //有值
 // console.log(c,d);
 
 // let jsonData = {        //可以快速提取json数据
@@ -54,7 +54,7 @@
 //   let { id, status, data: number } = jsonData;
 //   console.log(id, status, number);
 
-const map = new Map();
+const map = new Map();          //Map结构 用for  of循环遍历
 map.set(1,3,5);
 map.set(2,4);
 
@@ -62,6 +62,6 @@ for (let a of map){
     console.log(a);
 }
 
-for (let [,,a] of map){
+for (let [,a] of map){
     console.log(a);
 }
