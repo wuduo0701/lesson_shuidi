@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    html, body{
+	    height: 100%;
+	}
+	body{
+	    background: white;
+	    margin: 0%;
+	    padding: 0%;
+	    position: relative;
+	}
+	img{
+      width: 100px;
+      height: 55px;
+	    position: absolute;
+	    left: 5%;
+	    top: 10px;
+	    /* margin-left: -50px; */
+	    /* margin-top: -28px; */
+	}
+    </style>
+</head>
+<body>
+    <img src="shtuttle.png" alt="" id="shuttle"/>
+    <script src="./gasp.min.js"></script>
+    <script>
+    var shuttle = document.getElementById('shuttle');
+    // tween? js的效果   会来回跳动
+    TweenMax.to(shuttle, 3, {
+        top: '50%',
+        left: 250,
+        delay: 0,       //时间的延迟
+        ease: Back.easeOut,
+    })
+    TweenMax.to(shuttle, 2, {
+        //top: '50%',
+        left: '100%',
+        delay: 3,       //时间的延迟
+        scale: .2,      //放大缩小
+        opacity: 0,     //透明度为0
+        ease: Back.easeOut,
+    })
+    </script>
+</body>
+</html>

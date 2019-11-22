@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./animate.css">
+</head>
+<body>
+    <div id="skyscrapper">
+        <div class="box" id="box_a"></div>
+        <div class="box" id="box_b"></div>
+        <div class="box" id="box_c"></div>
+    </div>
+    <script src="./gasp.min.js"></script>
+    <script src="./anmate.js"></script>
+    <script>
+        var skyObj = {
+        leftAnimated: ['#box_a','#box_c'],
+        rightAnimated: ['#box_b']
+    }
+    new Animation(skyObj);
+    </script>
+</body>
+</html>

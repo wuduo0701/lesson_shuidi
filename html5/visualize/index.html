@@ -98,10 +98,14 @@
         // console.log(dataArray);
         for (var i = 0, x = 0; i < bufferLength; i++) {
           barHeight = dataArray[i];
-          var rgb1 = Math.ceil(Math.random()*255);
-              rgb2 = Math.ceil(Math.random()*255),
-              rgb3 = Math.ceil(Math.random()*255);
-              ctx.fillStyle = "rgb(" + rgb1 + "," + rgb2 + "," + rgb3 + ")";
+          var rgb1 = Math.ceil(Math.random()*50);
+              rgb2 = Math.ceil(Math.random()*50);
+              //rgb3 = Math.ceil(Math.random()*100);
+          var r = barHeight + 25 * (i / bufferLength);
+          var g = 250 * (i / bufferLength);
+          // console.log(i);
+          var b = 50;
+              ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
           ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
           x += barWidth + 2;
         }
