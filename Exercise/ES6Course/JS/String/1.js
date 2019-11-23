@@ -25,9 +25,19 @@
 // // 上面的表达式相当于下面的表达式，然后调用了上面的tag函数。
 // // tag(['Hello ', 'world ', ''], 15, 50);
 
-let s = "hello world!";
+// let s = "hello world!";
 
-console.log(s.includes('hello'));   //返回布尔值，表示是否找到了参数字符串。
-console.log(s.startsWith('h'));     //返回布尔值，表示参数字符串是否在原字符串的头部。
-console.log(s.endsWith('!'));       //返回布尔值，表示参数字符串是否在原字符串的尾部。
+// console.log(s.includes('hello'));   //返回布尔值，表示是否找到了参数字符串。
+// console.log(s.startsWith('h'));     //返回布尔值，表示参数字符串是否在原字符串的头部。
+// console.log(s.endsWith('!'));       //返回布尔值，表示参数字符串是否在原字符串的尾部。
 
+// 'x'.repeat(2);  //返回一个新的字符串，表示讲原字符串重复n次(n>=0)
+// 'x'.repeat(3.2);    //会向上进行取整，这里会取3
+
+// console.log('x'.repeat(2));     //xx
+// console.log('x'.repeat(3.2));   //xxx
+
+// const s = "  abc "
+// console.log(s.trim());      //消除字符串里的空格
+// console.log(s.trimStart());     //只修改字符串头部的空格
+// console.log(s.trimEnd());       //只修改字符串尾部的空格
