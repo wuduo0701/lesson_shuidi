@@ -1,0 +1,73 @@
+/* pages/home/home.wxss */
+.title{
+    font-size: 20px; 
+    font-weight: 600;
+    text-align: center;
+    }
+.item-title{
+        font-size:18px;
+        font-weight:500;
+        color: #c60;
+    }
+#wxmlinfo,#studyweapp{
+        padding-top:20px;
+        padding-right:15px;
+        padding-bottom:20px;
+        padding-left:15px;
+        font-size:16px;
+        font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+        line-height: 1.6;
+    }
+#wxmlinfo{
+        background-color: #dae7d9;
+      }
+      /* 写在wxss里的图片只能来自服务器或者图床，不能放在小程序的文件结构里，这是小程序的一个规定 */
+#studyweapp{
+        background-image: url(https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+.item-link{
+      margin: 20px;
+      padding:10px 15px;
+      background-color: #4ea6ec;
+      color: #fff;
+      border-radius: 4px;
+    }
+.event-list{
+      background-color: #fafbfc;
+      padding: 20px 0;
+      }
+.event-link{
+      margin: 10px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow:5rpx 8rpx 10rpx rgba(53,178,225,0.26);
+      overflow: hidden;
+    }
+.event-img image{
+      width: 100%;
+      }
+.event-content{
+      padding: 25rpx;
+      }
+.event-title{
+      line-height: 1.7em;
+      }
+.event-desc{
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5em;
+      font-weight: 200;
+      }
+.event-box{
+      margin-top: 15px;
+      overflow: hidden;
+      }
+.event-address,.event-time{
+      float: left;
+      color: #cecece;
+      font-size: 12px;
+      padding-right: 15px;
+      }
+

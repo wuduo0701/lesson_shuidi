@@ -1,0 +1,17 @@
+/* pages/home/imageshow/imageshow.wxss */
+.imglist .title{
+  text-align: center;
+}
+.imglist .img{
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 5px 8px 30px rgba(53,178,225,0.26);
+}
+.imglist .imgitem{
+    width: 100%;
+}
+.imglist .circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }

@@ -1,0 +1,59 @@
+<view id="studyweapp">
+    <view class="content">
+        <view class="header">
+            <view class="title">技术学习说明</view>
+            <view class="desc">技术和我们以往所接触的一些知识有很大的不同，比如英文非常强调词汇量，需要你多说多背；数学需要你记住公式，反复练习；在教学的方式上也有很大的不同，以前都是有专门的老师手把手教你，而且还有同学交流。
+            那要学好技术，应该依循什么样的学习方法和教学方法呢？
+            </view>
+        </view>
+        <view class="lists">
+            <view class="item">
+                <view class="item-title">自学而非手把手</view>
+                <view class="item-desc">技术的方向众多，而且知识点也是非常庞杂，需要你具备一定的自学能力，所谓自学能力就是要求你遇到问题能够勤于思考，擅于搜索，能够不断实践探索。在实际工作中，也要求你能根据技术文档可以迅速掌握前沿的技术，而同事不会有时间教你，如果没有自学能力，是很难胜任很多工作的。
+                </view>
+            </view>
+            <view class="item">
+                <view class="item-title">查阅文档而非死记知识点</view>
+                <view class="item-desc">在高中一学期一门课只有很薄的一本书，老师会反复讲解知识点，强化你的记忆，考试也是闭卷；而技术一个很小的分支，内容就有几千页甚至更多，强记知识点显然不合适。学习技术要像查词典一样来查阅技术文档，你只需要掌握基本的语法和用法，在编程的时候随时查阅，就像你不需要背诵上万的单词也能知道它的意思用法一样，所以技术文档是学习技术最为重要的参考资料。
+                </view>
+            </view>
+            <view class="item">
+                <view class="item-title">实战而非不动手的看书</view>
+                <view class="item-desc">技术是最强调结果的技能，你看了再多书，如果不知道技术成品是怎么写出来的，都是枉然。很多朋友有收集癖，下载了很多电子资源，收藏了很多高赞的技术文章，但是却没有动手去消化去理解，把时间和精力都浪费了。不动手在开发者工具里去写代码，不动手配置开发环境，缺乏实战的经验，都是阻碍你学好技术的坏习惯。
+                </view>
+            </view>
+            <view class="item">
+                <view class="item-title">搜索而非做伸手党</view>
+                <view class="item-desc">在以前，我们遇到技术问题，我们可以问老师问同学，于是很多人把这种不良的习惯也带到了技术的学习当中，遇到问题也总喜欢求助于别人。技术的方向众多，环境复杂，问题也是很多，如果你总是依赖别人的解答，是很难学好技术的。一定要学会在网上通过搜索遇到的问题来找答案。
+                </view>
+            </view>
+            <view class="item">
+                <view class="item-title">团队协作，而非单打独斗</view>
+                <view class="item-desc">一个产品涉及的技术非常多，需要很多人来一起配合才能开发好，所以学习技术的时候我们需要了解一些代码规范、工作的流程、项目管理等，在技术方面也会有API接口，接口文档这些，还要懂得如何和同职业的同事以及不同角色的人如设计师等一起配合，而不是自己一个人单打独斗。</view>
+            </view>
+            <view class="item">
+                <view class="item-title">系统的指导而非茫然无序</view>
+                <view class="item-desc">学好技术最依赖你自学，但是如果没有人指导你，你可能会像苍蝇一样陷入众多资料中茫然无序，抓不住一个技术的重点，也不清楚哪些技术才值得你深入学习，最好是有经验的人可以指点你应该看什么，学什么，什么才是重点，当然不是手把手教你。
+                </view>
+            </view>
+        </view>
+    </view>   
+</view>
+<view class="event-list">
+    <navigator url="/pages/home/imageshow/imageshow" class="event-link">        
+        <view class="event-img">
+            <image mode="widthFix" src="https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/weapp.jpg"></image>
+        </view>
+        <view class="event-content">
+            <view class="event-title">零基础学会小程序开发</view>
+            <view class="event-desc">通过两天集中的学习，你会循序渐进的开发出一些具有实际应用场景的小程序。 </view>
+            <view class="event-box">
+                <view class="event-address">深圳南山</view>
+                <view class="event-time">2018年9月22日-23日</view>
+            </view>
+        </view>
+    </navigator>
+</view>
+<view class="index-link">
+  <navigator url="./../home/imageshow/imageshow" class="item-link">让小程序显示图片</navigator>
+</view>
