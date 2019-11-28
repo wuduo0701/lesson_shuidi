@@ -54,6 +54,57 @@
         </view>
     </navigator>
 </view>
+<view class="flex-box">
+    <view class="list-item">python</view>
+    <view class="list-item">小程序</view>
+    <view class="list-item">网站建设</view>
+</view>
+<view class="page__bd">
+    <view class="weui-article">
+        <view class="weui-article__h1">HackWork技术工坊</view>
+        <view class="weui-article__section">
+            <view class="weui-article__p">HackWork技术工坊是技术普及的活动，致力于以有趣的形式让参与者学到有用的技术。任务式实战、系统指导以及社区学习能有效提高技术小白学习技术的效率以及热情。
+            </view>
+            <view class="weui-article__section">
+                <view class="weui-article__h3">任务式实战</view>
+                <view class="weui-article__p">
+                        每节都会有非常明确的学习任务，会引导你循序渐进地通过实战来掌握各个知识点。只有动手做过的技术才属于自己。
+                </view>
+                <view class="weui-article__p">
+                    <image class="weui-article__img" src="https://hackweek.oss-cn-shanghai.aliyuncs.com/hw18/hackwork/weapp/img1.jpg" mode="aspectFit" style="height: 180px" />
+                </view>
+                <view class="weui-article__h3">系统指导</view>
+                <view class="weui-article__p">
+                        针对所有学习问题我们都会耐心解答，我们会提供详细的学习文档，对大家的学习进行系统指导。
+                </view>
+                <view class="weui-article__p">
+                    <image class="weui-article__img" src="https://hackweek.oss-cn-shanghai.aliyuncs.com/hw18/hackwork/weapp/img2.jpg" mode="aspectFit" style="height: 180px" />
+                </view>
+                <view class="weui-article__h3 hw__h3">社区学习</view>
+                <view class="weui-article__p">
+                        参与活动即加入了我们的技术社区，我们会长期提供教学指导，不必担心学不会，也不用担心没有一起学习的伙伴。
+                </view>
+            </view> 
+        </view>     
+    </view>   
+</view>
+<view class="page__bd" id="news-list">
+    <view class="weui-panel__bd">
+        <navigator url="" class="news-item" hover-class="weui-cell_active">
+            <view class="news-img">
+                <image mode="widthFix" class="" src="https://img.36krcdn.com/20190810/v2_1565404308155_img_000" />
+            </view>
+            <view class="news-desc">
+                <view class="weui-media-box__title">小程序可以在 PC 端微信打开了</view>
+                <view class="weui-media-box__desc">微信开始测试「PC 端支持打开小程序」的新能力，用户终于不用在电脑上收到小程序时望手机兴叹。</view>
+                <view class="weui-media-box__info">
+                    <view class="weui-media-box__info__meta">深圳</view>
+                    <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">8月9日</view>
+                </view>
+            </view>
+        </navigator>
+    </view> 
+</view>
 <view class="index-link">
   <navigator url="./../home/imageshow/imageshow" class="item-link">让小程序显示图片</navigator>
 </view>

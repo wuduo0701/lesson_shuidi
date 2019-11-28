@@ -70,4 +70,30 @@
       font-size: 12px;
       padding-right: 15px;
       }
+.list-item{
+      background-color: #82c2f7;
+      height: 100px;
+      text-align:center;      /*垂直居中*/
+      justify-content: center;      /*水平居中*/
+      flex: 1;
+}
+.hw__h3{
+      color:#1772cb;
+    }
+.flex-box{
+      display: flex;
+}
+
+#news-list .news-item{
+  margin: 15rpx;
+  padding: 15rpx;
+  border-bottom: 1rpx solid #ccc
+  }
+#news-list .news-img image{
+  width: 100%;
+  }
+#news-list .news-desc{
+  width: 100%;
+  }
+
 

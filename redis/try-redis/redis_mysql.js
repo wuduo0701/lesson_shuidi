@@ -32,8 +32,7 @@ app.get("/api/students", function(req,res){
                 });   
             });
         }
-    })
-    
+    })   
 });
 
 app.listen(1314,function(){
