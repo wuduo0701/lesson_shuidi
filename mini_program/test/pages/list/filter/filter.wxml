@@ -1,0 +1,23 @@
+<!--pages/list/filter/filter.wxml-->
+<view class="filter-display">
+    <view>blur高斯模糊</view>
+    <image class="blur" mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg"></image>
+    <view>grayscale图片变灰</view>
+    <image class="grayscale" mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg"></image>
+    <view>opacity图片透明</view>
+    <image class="opacity" mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg"></image>
+    <view>多个滤镜叠加，注意css的写法即可</view>
+    <image class="multiple" mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg"></image>
+</view>
+<view class="filter-display">
+    <text>将鼠标悬停（模拟器）或手指（手机微信）按住或放开图片查看效果</text>
+    <view class="grayscale" hover-class="grayscale-hover" >
+      <image mode="widthFix"  src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg"></image>
+    </view>
+</view>
+<view class="userinfo-display">
+    <view class="blur-bg"></view>
+    <view class="user-img">
+        <image src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/luffy.jpg"></image>
+    </view>
+</view>

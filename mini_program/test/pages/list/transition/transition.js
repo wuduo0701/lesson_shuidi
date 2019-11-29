@@ -1,4 +1,4 @@
-// pages/home/home/imageshow/imageshow.js
+// pages/list/transition/transition.js
 Page({
 
   /**

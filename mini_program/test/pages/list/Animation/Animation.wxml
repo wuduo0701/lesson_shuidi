@@ -1,0 +1,5 @@
+<!--pages/list/Animation/Animation.wxml-->
+<view class="fadeIn">
+ <view>注意会有一个无限颜色渐变变化的动画</view>
+    <image mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg" ></image>
+</view>

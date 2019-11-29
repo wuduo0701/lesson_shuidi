@@ -2,11 +2,14 @@
   "pages": [
     "pages/list/list",
     "pages/home/home",
-    "pages/home/home/imageshow/imageshow",
     "pages/partner/partner",
     "pages/more/more",
     "pages/post/post",
-    "pages/home/imageshow/imageshow"
+    "pages/home/imageshow/imageshow",
+    "pages/list/gradient/gradient",
+    "pages/list/transform/transform",
+    "pages/list/transition/transition",
+    "pages/list/Animation/Animation"
   ],
   "window": {
     "backgroundTextStyle": "dark",

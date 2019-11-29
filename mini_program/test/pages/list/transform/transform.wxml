@@ -1,0 +1,11 @@
+<!--pages/list/transform/transform.wxml-->
+<view class="transform-display">
+    <view>缩放,scale(x,y)，x为长度缩放倍数，y为宽度缩放倍数，如果只有一个值，则是长和宽缩放的倍数</view>
+    <image class="scale"  mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg" ></image>
+    <view>平移,translate(x,y)，x为x轴平移的距离，y为y轴平移的距离，如果只有一个值，则是x和y轴缩放的距离，值可以为负数</view>
+    <image class="translate" mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg" ></image>
+   <view>旋转,rotate()里的值为旋转的角度</view>
+   <image class="rotate"  mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg" ></image>
+   <view>倾斜,skew()里的值为旋转的角度</view>
+   <image class="skew"  mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg" ></image>
+</view>
