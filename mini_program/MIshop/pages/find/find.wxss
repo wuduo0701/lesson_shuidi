@@ -1,0 +1,41 @@
+.list-item{
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    border:1px ;
+    flex:1;
+  }
+.flex-box{
+    display: flex;
+  }
+.icon-size{
+    width:40px; 
+    height:40px;
+}
+.text-center{
+    text-align: center;
+    font-size: 12px;
+    color: #c0c0c0;
+}
+.event-link{
+    margin: 10px 1px 1px 1px;
+    background-color: #fff;
+    padding-top: 10px;
+    box-shadow:5rpx 5rpx 5rpx rgba(226, 230, 231, 0.26);
+    overflow: hidden;
+}
+.p_size1{
+    height:200px;
+    width: 100%;
+}
+.event-content{
+    padding: 25rpx;
+}
+.text1{
+    text-align: center;
+    color:black;
+    font-size: 1.2em;
+    background-color:#fff;
+    height: 60px;
+    line-height: 60px;
+}

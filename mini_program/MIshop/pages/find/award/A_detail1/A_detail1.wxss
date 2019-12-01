@@ -1,0 +1,44 @@
+.event-list{
+    background-color: #fafbfc;
+    }
+.event-link{
+    background-color: #fff;
+    box-shadow:5rpx 8rpx 10rpx rgba(234, 237, 238, 0.26);
+    overflow: hidden;
+  }
+.event-img image{
+    width: 100%;
+}
+.event-content{
+    padding: 25rpx;
+    }
+.event-title{
+        line-height: 1.7em;
+        font-size: 18px;
+    }
+.event-desc{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5em;
+    font-weight: 200;
+}
+.event-top{
+    padding-top: 20px;
+}
+.divLine{
+    padding-top: 10px;
+    background: #E0E3DA;
+    width: 100%;
+    height: 0.1em;
+}
+.icon-size{
+    width:25px; 
+    height:25px;
+    float: right;
+}
+.text-right{
+    text-align: right;
+    color: black;
+    font-size: 16px;
+    padding-left: 45%;
+}

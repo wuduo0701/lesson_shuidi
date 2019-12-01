@@ -1,0 +1,30 @@
+<view class="flex-box" style="padding:10px 0 0 0">
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/find/heart.png" class="icon-size"></image>
+        <view class="text-center">
+            新品预约
+        </view>  
+    </view>
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/find/gift.png" class="icon-size"></image>
+        <view class="text-center">
+            赢好礼
+        </view>  
+    </view>
+        <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/find/shop.png" class="icon-size"></image>
+        <view class="text-center">
+            线下门店
+        </view>  
+    </view>
+</view>
+<view class="event-content">
+    <navigator url="/pages/find/award/award" class="event-link">
+        <view>
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/find/find_1.jpg" class="p_size1"></image>
+        </view>
+        <view class="text1">
+            抽奖赢好礼
+        </view>
+    </navigator>
+</view>

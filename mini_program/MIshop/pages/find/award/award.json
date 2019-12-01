@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "祝你中大奖",
+  "backgroundColor": "#ff6600",
+  "backgroundTextStyle": "light"
+}

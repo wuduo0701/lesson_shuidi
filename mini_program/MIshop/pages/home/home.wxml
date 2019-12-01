@@ -1,0 +1,229 @@
+<view>
+  <swiper indicator-dots="{{false}}" true autoplay='true' interval='3000' circular='true'>
+    <swiper-item>
+      <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_3.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view>
+<view style="height:20px;"></view>
+<view class="flex-box">
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/phone.png" class="icon-size"></image>   
+    </view>
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/tv.png" class="icon-size"></image>   
+    </view>
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/computer.png" class="icon-size"></image>   
+    </view>
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/bargain.png" class="icon-size"></image>   
+    </view>
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/gift.png" class="icon-size"></image>   
+    </view>
+</view>
+<view class="flex-box">
+    <view class="list-item">
+        <text class="text-center">手机</text>
+    </view>
+    <view class="list-item">
+        <text class="text-center">电视</text>
+    </view>
+    <view class="list-item">
+        <text class="text-center">电脑</text>
+    </view>
+    <view class="list-item">
+        <text class="text-center">助力砍价</text>
+    </view>
+    <view class="list-item">
+        <text class="text-center">0元抽奖</text>
+    </view>
+</view>
+<view style="height:20px;"></view>
+<view class="flex-box">
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/Assemble.png" class="icon-size"></image>   
+    </view>
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/Crowd-funding.png" class="icon-size"></image>   
+    </view>
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/seckill.png" class="icon-size"></image>   
+    </view>
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/exchange.png" class="icon-size"></image>   
+    </view>
+    <view class="list-item">
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/special-offer.png" class="icon-size"></image>   
+    </view>
+</view>
+<view class="flex-box">
+    <view class="list-item">
+        <text class="text-center">1分拼团</text>
+    </view>
+    <view class="list-item">
+        <text class="text-center">小米众筹</text>
+    </view>
+    <view class="list-item">
+        <text class="text-center">小米秒杀</text>
+    </view>
+    <view class="list-item">
+        <text class="text-center">以旧换新</text>
+    </view>
+    <view class="list-item">
+        <text class="text-center">9.9元特价</text>
+    </view>
+</view>
+<view style="height:10px;"></view>
+</view>
+<view>
+    <view style="height:40px;">
+        <text class="recommand">人气推荐</text>
+    </view>
+    <view>
+        <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_4.jpg" class="p_recommand"/>
+    </view>
+    <view class="recommand_title">清洁湿巾</view>
+    <view class="recommand_text">20片/包*5包/母婴适用/RO纯水/柔软细腻/温和无刺激</view>
+    <view class="recommand_price">￥9.9</view>
+    <view class="flex-box">
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_5.jpg" class="p_size1"/>
+            <view class="recommand_title">最生活毛巾</view>
+            <view class="recommand_text">阿瓦提长绒棉/瑞典抗菌科...</view>
+            <view class="recommand_price">￥19.9</view>
+        </view>
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_6.jpg" class="p_size1"/>
+            <view class="recommand_title">贝医生牙刷</view>
+            <view class="recommand_text">瑞典进口毛刷/专利科学布...</view>
+            <view class="recommand_price">￥8.9</view>
+        </view>
+    </view>
+    <view class="flex-box">
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_7.jpg" class="p_size1"/>
+            <view class="recommand_title">Type-C耳机</view>
+            <view class="recommand_text">USB Type-C接口/动圈+陶...</view>
+            <view class="recommand_price">￥99</view>
+        </view>
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_8.jpg" class="p_size1"/>
+            <view class="recommand_title">小米手环3/4通用...</view>
+            <view class="recommand_text">顺滑柔软、触感舒适...</view>
+            <view class="recommand_price">￥19.9</view>
+        </view>
+    </view>
+</view>
+<view>
+    <view style="height:40px;">
+        <text class="recommand">猜你喜欢</text>
+    </view>
+    <view class="flex-box">
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_9.png" class="p_size2"/>
+            <view class="recommand_title">小米小背包</view>
+            <view class="recommand_text">4级防泼水/10L容量/轻盈背负/YKK拉链</view>
+            <view class="recommand_price">￥29</view>
+        </view>
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_10.png" class="p_size2"/>
+            <view class="recommand_title">中性笔10支装</view>
+            <view class="recommand_text">4倍书写长度/日本MIKUNI油墨/0.5mm弹簧子弹头...</view>
+            <view class="recommand_price">￥9.99</view>
+        </view>
+    </view>
+    <view class="flex-box">
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_11.png" class="p_size2"/>
+            <view class="recommand_title">Redmi Note 8 Pro</view>
+            <view class="recommand_text">6400万旗舰级全场景四摄/前置2000万AI美艳相机/...</view>
+            <view class="recommand_price">￥1229起</view>
+        </view>
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_12.png" class="p_size2"/>
+            <view class="recommand_title">米家声波电动牙刷</view>
+            <view class="recommand_text">高频振动/两档模式/进口纤密软毛/长续航/强防水/...</view>
+            <view class="recommand_price">￥39.9</view>
+        </view>
+    </view>
+    <view class="flex-box">
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_13.png" class="p_size2"/>
+            <view class="recommand_title">Redmi 8A</view>
+            <view class="recommand_text">5000mAh大电量/最高可选4GB+64GB版本/支持18W...</view>
+            <view class="recommand_price">￥699</view>
+        </view>
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_14.png" class="p_size2"/>
+            <view class="recommand_title">贝医生牙膏</view>
+            <view class="recommand_text">0添加色素防腐剂/选用进口研磨剂/不伤牙釉质/加固...</view>
+            <view class="recommand_price">￥12.9</view>
+        </view>
+    </view>
+    <view class="flex-box">
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_15.png" class="p_size2"/>
+            <view class="recommand_title">净水器滤芯</view>
+            <view class="recommand_text">拦截5微米以上大颗粒/有效滤除泥沙颗粒、浑浊物...</view>
+            <view class="recommand_price">￥59</view>
+        </view>
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_16.png" class="p_size2"/>
+            <view class="recommand_title">摄像机云台版</view>
+            <view class="recommand_text">1080P高清画质/360度云台全景视角/红外夜视/双向...</view>
+            <view class="recommand_price">￥199</view>
+        </view>
+    </view>
+    <view class="flex-box">
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_17.png" class="p_size2"/>
+            <view class="recommand_title">米家毛球修剪器</view>
+            <view class="recommand_text">0.35mm微弧护衣网/5叶浮动刀头/90分钟长久续航...</view>
+            <view class="recommand_price">￥39.9</view>
+        </view>
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_18.png" class="p_size2"/>
+            <view class="recommand_title">5号电池</view>
+            <view class="recommand_text">麦克赛尔监制电池核心/电量持久，强劲有力/碱性10粒...</view>
+            <view class="recommand_price">￥9.9</view>
+        </view>
+    </view>
+    <view class="flex-box">
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_19.png" class="p_size2"/>
+            <view class="recommand_title">小米9 Pro 5G</view>
+            <view class="recommand_text">5G双卡全网通网络/骁龙855Plus旗舰处理器/40...</view>
+            <view class="recommand_price">￥3699起</view>
+        </view>
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_20.png" class="p_size2"/>
+            <view class="recommand_title">7号电池</view>
+            <view class="recommand_text">麦克赛尔监制电池核心/7年长久锁住电量/碱性10粒...</view>
+            <view class="recommand_price">￥9.9</view>
+        </view>
+    </view>
+    <view class="flex-box">
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_21.png" class="p_size2"/>
+            <view class="recommand_title">小爱音响Play</view>
+            <view class="recommand_text">智能设备控制/人工智能语音对话/就近唤醒/趣味闹钟...</view>
+            <view class="recommand_price">￥99</view>
+        </view>
+        <view class="list-item2">
+            <image src="https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/mishop/home/home_22.png" class="p_size2"/>
+            <view class="recommand_title">小米CC9e</view>
+            <view class="recommand_text">前置3200万自拍/索尼4800万超广角三摄/4030mAh...</view>
+            <view class="recommand_price">￥1099起</view>
+        </view>
+    </view>
+</view>
+
