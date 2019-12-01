@@ -39,6 +39,7 @@
         </view>
     </view>   
 </view>
+
 <view class="event-list">
     <navigator url="/pages/home/imageshow/imageshow" class="event-link">        
         <view class="event-img">

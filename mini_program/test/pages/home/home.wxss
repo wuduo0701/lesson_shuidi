@@ -60,6 +60,7 @@
       line-height: 1.5em;
       font-weight: 200;
       }
+      
 .event-box{
       margin-top: 15px;
       overflow: hidden;
