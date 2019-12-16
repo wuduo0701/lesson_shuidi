@@ -66,5 +66,4 @@ page {
 }
 .nav-item.active{
   color: #fc975c;
-  
 }

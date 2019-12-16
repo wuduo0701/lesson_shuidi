@@ -6,7 +6,7 @@ Page({
     navData: [
       {
         id: 1,
-        name: '专车'
+        name: '专车' 
       },
       {
         id: 2,
@@ -14,6 +14,7 @@ Page({
       }
     ]
   },
+
   showUser() {
     console.log(app);
     // 用户如何点击了授权，就显示小家如果没有，则取登入
