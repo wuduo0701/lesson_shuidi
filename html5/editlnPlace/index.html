@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div>这个家伙很懒,什么都没有留下</div> -->
+    <!-- 双击一下, 文字, 瞬间移动, 变成输入框, 立即输入, 回车
+    - 双击事件
+    - 状态的改变 DOM编程
+    - 本地存储
+    - 将这些整合起来 面向对象来封装处理 -->
+    <div id="profile">
+
+    </div>
+    <script>
+        //在线编辑 类
+        // 类的本质是用来实现内部的细节
+        function EditInPlace(id, parent, value) {
+            this.id = id;
+            this.value = value || 'default value';
+            this.parentElement = document.getElementById(parent);
+            this.createElements();   //把节点显示到页面上
+            this.attachEvents();    //增加一个事件
+        }
+        EditInPlace.prototype.attachEvents = function() {
+            // this 这个 ->指向实例过后的对象
+            // console.log(this)
+            var that = this;        //this在后面挂载的时候被修改了，在这里保存那时候的this指向，就可以使用以前的this
+            this.saveButton.addEventListener('click', () =>{
+                var text = this.fieldElement.value;
+                this.value = text;
+                //调用本地缓存
+                window.localStorage.setItem('profile',text);
+                // 调用session缓存
+                window.sessionStorage.setItem('profile', text);
+                this.staticElement.innerText = text;
+                this.convertToText();
+            })
+            this.cancleButton.addEventListener('click', () =>{          //在这里使用箭头函数也可以 this指向会指向函数外层
+                this.fieldElement.value = this.value;
+                this.convertToText();
+            })
+            this.staticElement.addEventListener('click', () =>{       
+                // console.log('巴拉巴拉小魔仙变身')
+                // console.log(this);
+                this.convertToEdit();
+            }, false);
+        }
+        EditInPlace.prototype.convertToEdit = function(){
+            this.staticElement.style.display = 'none';
+            this.fieldElement.style.display = 'inline';
+            this.saveButton.style.display = 'inline';
+            this.cancleButton.style.display = 'inline';
+        }
+        EditInPlace.prototype.convertToText = function(){
+            this.staticElement.style.display = 'block';
+            this.fieldElement.style.display = 'none';
+            this.saveButton.style.display = 'none';
+            this.cancleButton.style.display = 'none';
+        }
+        //  构造函数
+        EditInPlace.prototype.createElements = function() {
+            // console.log(this.id);
+            this.containerElement = document.createElement('div');
+            this.staticElement = document.createElement('span');
+            this.staticElement.innerText = this.value;
+
+
+            this.fieldElement = document.createElement('input');
+            this.fieldElement.type = 'text';
+            this.fieldElement.value = this.value;
+            this.fieldElement.style.display = 'none';
+           
+
+            this.saveButton = document.createElement('input');
+            this.saveButton.type = 'button';
+            this.saveButton.value = 'save';
+            this.saveButton.style.display = 'none';
+
+            this.cancleButton = document.createElement('input');
+            this.cancleButton.type = 'button';
+            this.cancleButton.value = 'cancle';
+            this.cancleButton.style.display = 'none';
+
+            this.parentElement.appendChild(this.containerElement);       //挂载一个子节点
+            this.containerElement.appendChild(this.staticElement);
+            this.containerElement.appendChild(this.fieldElement);
+            this.containerElement.appendChild(this.saveButton);
+            this.containerElement.appendChild(this.cancleButton);
+            
+            this.attachEvents();
+        }
+        window.onload = function(){
+            var profile = localStorage.getItem('profile')
+            var profileEditor = new EditInPlace('titleClassical', 'profile', profile);
+        }   
+    </script>
+</body>
+</html>
