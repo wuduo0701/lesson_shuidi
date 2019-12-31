@@ -7,6 +7,8 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "better-scroll": "^1.15.2",
+    "better-scroller": "^1.0.0",
     "core-js": "^3.4.3",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
