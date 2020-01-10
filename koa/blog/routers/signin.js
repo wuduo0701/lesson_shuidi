@@ -4,5 +4,4 @@ const controller = require('../controller/c-signin.js');
 router.post('/signin', controller.postSignin);
 router.get('/signin', controller.getSignin);
 
-
 module.exports = router;

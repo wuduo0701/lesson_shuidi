@@ -41,7 +41,7 @@ export default {
   },
   created(){      //生命周期函数，拿数据 相当于小程序里的 onLoad
     this.seller = Object.assign({}, this.seller, response.data);
-    console.log(this.seller)
+    // console.log(this.seller)
   }
 }
 </script>
@@ -67,7 +67,5 @@ export default {
       text-decoration none
       &.active
         color: rgb(240, 20,20)
-
-
 
 </style>

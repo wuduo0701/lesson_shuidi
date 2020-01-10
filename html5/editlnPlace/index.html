@@ -94,6 +94,23 @@
             
             this.attachEvents();
         }
+        function EditInPlace(id, parent, value) {
+
+        }
+        // EditInPlace.prototype = {
+        //     createElement:()=>{},   //创建节点
+        //     attachEvents(){},       //管理所有事件
+        //     convertToText(){},
+        //     convertToEdit(){},
+        //     save(){},
+        //     setValue(val){
+        //         this.value = value;
+        //         this.staticElement.innerText = value;
+        //         localStorage.setItem('profile', value);
+
+        //     },
+        //     cancel(){},
+        // }
         window.onload = function(){
             var profile = localStorage.getItem('profile')
             var profileEditor = new EditInPlace('titleClassical', 'profile', profile);

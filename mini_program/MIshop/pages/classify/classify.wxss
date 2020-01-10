@@ -40,7 +40,7 @@ page {
     color: #fc975c;
 }
 .title{
-    width: 70rpx;
+    width: 140rpx;
     height: 100rpx;
     text-align: center;
     font-size: 16px;
@@ -49,10 +49,10 @@ page {
 }
 .font{
     font-size: 11px;
-    height: 100rpx;
+    height: 90rpx;
     width: 190rpx;
     color: #2F4F4F;
-    line-height: 100rpx;
+    line-height: 90rpx;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -64,22 +64,22 @@ page {
     flex-wrap: wrap;
 }
 .img-size{
-    width:72rpx; 
-    height:88rpx;
+    width:80rpx; 
+    height:80rpx;
 }
 .list-item{
     display: flex;
     background-color: white;
     text-align: center;
     flex-direction: column;
-    width: 72rpx;
-    height: 88rpx;
-    margin-left: 54rpx;
-    margin-right:64rpx;
+    width: 80rpx;
+    height: 80rpx;
+    margin-left: 55rpx;
+    margin-right:55rpx;
 }
 .linebox{
     height: 100rpx;
-    width: 250rpx;
+    width: 215rpx;
 }
 .line1{
     display: flex;
@@ -87,7 +87,7 @@ page {
     width: 40rpx;
     height: 3rpx;
     margin-top: 50rpx;
-    margin-left: 180rpx;
+    margin-left: 160rpx;
 }
 .line2{
     display: flex;
@@ -95,5 +95,5 @@ page {
     width: 40rpx;
     height: 3rpx;
     margin-top: 50rpx;
-    margin-left: 30rpx;
+    margin-left: 10rpx;
 }
