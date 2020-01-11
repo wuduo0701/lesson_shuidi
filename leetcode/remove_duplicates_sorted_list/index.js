@@ -7,7 +7,7 @@ var removeDuplicates = function(nums) {
       }
       else{
         per++;
-        // nums[per] = nums[cur];
+        nums[per] = nums[cur];
         cur++;
       }
       // return per;
