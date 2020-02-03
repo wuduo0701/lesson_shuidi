@@ -2,86 +2,85 @@ Page({
   data:{
     currentTab:0,   //目前按钮所在的id
     navScrollLeft: 0,
+    scrollTop:0,
     // 左边滑块的内容
     navData:[
       {
-        id: 1,
+        id: "zhong",
         name: "新品"
       },
       {
-        id: 2,
+        id: "zhong",
         name: "众筹"
       },
       {
-        id: 3,
+        id: "mi",
         name: "小米手机"
       },
       {
-        id: 4,
+        id: "redmi",
         name: "Redmi手机"
       },
       {
-        id: 5,
+        id: "heisha",
         name: "黑鲨游戏手机"
       },
       {
-        id: 6,
+        id: "tv",
         name: "电视"
       },
       {
-        id: 7,
+        id: "big_jd",
         name: "大家电"
       },
       {
-        id: 8,
+        id: "com_office",
         name: "电脑办公"
       },
       {
-        id: 10,
+        id: "AI",
         name: "小爱智能"
       },
       {
-        id: 11,
+        id: "router",
         name: "路由器"
       },
       {
-        id: 12,
+        id: "ele_life",
         name: "生活家电"
       },
       {
-        id: 13,
+        id: "ele_kitchen",
         name: "厨房电器"
       },{
-        id: 14,
+        id: "AI_dress",
         name: "智能穿戴"
       },{
-        id: 15,
-        name: "智能家居"
-      },{
-        id: 16,
+        id: "Vehicle",
         name: "车载出行"
       },{
-        id: 17,
+        id: "per_health",
         name: "个护健康"
       },{
-        id: 18,
+        id: "Dig_parts",
         name: "数码配件"
       },{
-        id: 19,
+        id: "day_use",
         name: "日常用货"
-      },{
-        id: 20,
-        name: "有品精选"
-      },{
-        id: 21,
-        name: "服务"
-      },
+      }
+      // ,{
+      //   id: 18,
+      //   name: "有品精选"
+      // },{
+      //   id: 19,
+      //   name: "服务"
+      // },
     ],
     // 右边所有商品的内容
     item:[
       //手机部分数据
       {
-        id: "phone",
+        id: "xing",
         name:  "手机",
         cate_list:[
           {
@@ -124,7 +123,7 @@ Page({
       },
       // 家电部分数据
       {
-        id: "ele_appliance",
+        // id: "2",
         name: "家电",
         cate_list:[
           {
@@ -143,7 +142,7 @@ Page({
       },
       //电脑部分数据
       {
-        id: "cpmputer",
+        // id: "3",
         name: "电脑",
         cate_list:[
           {
@@ -162,7 +161,7 @@ Page({
       },
       // 众筹好物部分
       {
-        id: "funding",
+        id: "zhong",
         name: "众筹好物",
         cate_list:[
           {
@@ -181,7 +180,7 @@ Page({
       },
       //小米系列
       {
-        id: "xiaomi",
+        id: "mi",
         name: "小米系列",
         cate_list:[
           {
@@ -204,7 +203,7 @@ Page({
       },
       // Redmi系列
       {
-        id: "Redmi",
+        id: "redmi",
         name: "Redmi",
         cate_list:[
           {
@@ -265,7 +264,7 @@ Page({
       },
       //盒子
       {
-        id: "box",
+        // id: "7",
         name: "盒子",
         cate_list:[
           {
@@ -284,7 +283,7 @@ Page({
       },
       //大家电
       {
-        id: "big_electric",
+        id: "big_jd",
         name: "大家电",
         cate_list:[
           {
@@ -303,7 +302,7 @@ Page({
       },
       //电脑部分数据
       {
-        id: "cpmputer",
+        id: "com_office",
         name: "电脑",
         cate_list:[
           {
@@ -326,7 +325,7 @@ Page({
       },
       //电脑配件
       {
-        id: "com_parts",
+        // id: "com_parts",
         name: "电脑配件",
         cate_list:[
           {
@@ -337,7 +336,7 @@ Page({
       },
       //小爱智能
       {
-        id: "xiaoai",
+        id: "AI",
         name: "小爱智能",
         cate_list:[
           {
@@ -348,7 +347,7 @@ Page({
       },
       //路由器
       {
-        id:"Router",
+        id:"router",
         name:"路由器",
         cate_list:[
           {
@@ -378,7 +377,7 @@ Page({
       },
       //厨房电器
       {
-        id: "ele_Kitchen",
+        id: "ele_kitchen",
         name: "厨房电器",
         cate_list: [
           {
@@ -397,7 +396,7 @@ Page({
       },
       //智能穿戴
       {
-        id: "intel_dress",
+        id: "AI_dress",
         name: "智能穿戴",
         cate_list:[
           {
@@ -412,7 +411,7 @@ Page({
       },
       //出行
       {
-        id: "Travel",
+        id: "Vehicle",
         name:"出行",
         cate_list:[
           {
@@ -427,7 +426,7 @@ Page({
       },
       //车载
       {
-        id:"Vehicle",
+        // id:"Vehicle",
         name:"车载",
         cate_list:[
           {
@@ -438,7 +437,7 @@ Page({
       },
       //个护
       {
-        id: "nursing",
+        id: "per_health",
         name: "个护",
         cate_list:[
           {
@@ -461,7 +460,7 @@ Page({
       },
       //健康
       {
-        id:"health",
+        // id:"health",
         name:"健康",
         cate_list:[
           {
@@ -476,7 +475,7 @@ Page({
       },
       //耳机
       {
-        id: "headset",
+        id: "Dig_parts",
         name: "耳机",
         cate_list:[
           {
@@ -510,7 +509,7 @@ Page({
       },
       //箱包
       {
-        id: "Bag",
+        id: "Dig_parts",
         name: "箱包",
         cate_list:[
           {
@@ -525,7 +524,7 @@ Page({
       },
       //家居日用
       {
-        id: "day_use",
+        // id: "day_use",
         name: "家居日用",
         cate_list:[
           {
@@ -544,10 +543,27 @@ Page({
       }
     ]
   },
-  switchNav(e){   
-    const cur = e.currentTarget.dataset.current;
+  scrollToView(e){   
+    const cur = e.currentTarget.dataset.current; 
+    const id = e.currentTarget.dataset.id;
+    console.log(id);
     this.setData({
-      currentTab: cur
+      toView: id,
+      currentTab: cur,
     })
   }
+  // scrollToView(e){
+  //   let id = e.target.dataset.id;
+  //   if(id === '1'){
+  //     this.setData({
+  //       scrollTop: 0
+  //     })
+  //   }else {
+  //     this.setData({
+  //       toView: id,
+  //       currentIndex: e.target.dataset.index
+  //     })
+  //   }
+  // }
+
 })

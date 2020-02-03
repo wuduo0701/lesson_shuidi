@@ -30,89 +30,50 @@
     </view>
 </view>
 <!-- 人气推荐部分 -->
-<view class="container2">
-    <view class="box1">
-        <text class="recommand">{{recommand_name}}</text>
-    </view>
-    <view class="box2">
-        <image src="{{recommand_img}}" class="p_recommand"/>
-    </view>
-    <view class="box3">
-        <view class="recommand_title">{{recommand_title}}</view>
-        <view class="recommand_text">{{recommand_text}}</view>
-        <view class="recommand_price">{{recommand_price}}</view>
-    </view>
+<view class="section block">
+	<block wx:for="{{recommand}}" wx:key="{{item.id}}">
+        <view class="container2">
+            <view class="box1">
+                <text class="recommand">{{item.name}}</text>
+            </view>
+            <view class="box2">
+                <image src="{{item.img}}" class="p_recommand"/>
+            </view>
+            <view class="box3">
+                <view class="recommand_title">{{item.title}}</view>
+                <view class="recommand_text">{{item.detail}}</view>
+                <view class="recommand_price">{{item.price}}</view>
+            </view>
+        </view>
+		<view class="section goods-list">
+			<block wx:for="{{item.section}}" wx:key="index" wx:for-item="product">
+				<view class="goods-item">
+					<image class="goods-img " src="{{product.img}}" data-pid="{{product.id}}" mode="aspectFill" bindtap="showDetail"/>
+					<text class="title">{{product.title}}</text>
+					<text class="detial">{{product.text}}</text>
+					<text class="price">{{product.price}}</text>
+                    <!-- 折扣 -->
+					<!-- <text class="discount">{{product.discount}}</text> -->
+				</view>
+			</block>
+		</view>
+	</block>
 </view>
-<view class="flex-box2" >
-    <view class="list-item" wx:for="{{recommand1}}" wx:for-item="R1"  wx:key="id">
-            <image src="{{R1.img}}" class="p_size1"/>
-            <view class="recommand_title">{{R1.title}}</view>
-            <view class="recommand_text">{{R1.text}}</view>
-            <view class="recommand_price">{{R1.price}}</view>     
-    </view> 
-</view>
-<view class="flex-box2" >
-    <view class="list-item" wx:for="{{recommand2}}" wx:for-item="R2">
-        <image src="{{R2.img}}" class="p_size1"/>
-        <view class="recommand_title">{{R2.title}}</view>
-        <view class="recommand_text">{{R2.text}}</view>
-        <view class="recommand_price">{{R2.price}}</view>
-    </view>
-</view>
-<view class="box4">{{love_name}}</view>
-<view class="flex-box3" >
-    <view class="list-item" wx:for="{{love}}" wx:for-item="L"  wx:key="id">
-            <image src="{{L.img}}" class="p_size1"/>
-            <view class="recommand_title">{{L.title}}</view>
-            <view class="recommand_text1">{{L.text}}</view>
-            <view class="recommand_price">{{L.price}}</view>     
-    </view> 
-</view>
-<view class="flex-box3" >
-    <view class="list-item" wx:for="{{love1}}" wx:for-item="L1"  wx:key="id">
-            <image src="{{L1.img}}" class="p_size1"/>
-            <view class="recommand_title">{{L1.title}}</view>
-            <view class="recommand_text1">{{L1.text}}</view>
-            <view class="recommand_price">{{L1.price}}</view>     
-    </view> 
-</view>
-<view class="flex-box3" >
-    <view class="list-item" wx:for="{{love2}}" wx:for-item="L2"  wx:key="id">
-            <image src="{{L2.img}}" class="p_size1"/>
-            <view class="recommand_title">{{L2.title}}</view>
-            <view class="recommand_text1">{{L2.text}}</view>
-            <view class="recommand_price">{{L2.price}}</view>     
-    </view> 
-</view>
-<view class="flex-box3" >
-    <view class="list-item" wx:for="{{love3}}" wx:for-item="L3"  wx:key="id">
-            <image src="{{L3.img}}" class="p_size1"/>
-            <view class="recommand_title">{{L3.title}}</view>
-            <view class="recommand_text1">{{L3.text}}</view>
-            <view class="recommand_price">{{L3.price}}</view>     
-    </view> 
-</view>
-<view class="flex-box3" >
-    <view class="list-item" wx:for="{{love4}}" wx:for-item="L4"  wx:key="id">
-            <image src="{{L4.img}}" class="p_size1"/>
-            <view class="recommand_title">{{L4.title}}</view>
-            <view class="recommand_text1">{{L4.text}}</view>
-            <view class="recommand_price">{{L4.price}}</view>     
-    </view> 
-</view>
-<view class="flex-box3" >
-    <view class="list-item" wx:for="{{love5}}" wx:for-item="L5"  wx:key="id">
-            <image src="{{L5.img}}" class="p_size1"/>
-            <view class="recommand_title">{{L5.title}}</view>
-            <view class="recommand_text1">{{L5.text}}</view>
-            <view class="recommand_price">{{L5.price}}</view>     
-    </view> 
-</view>
-<view class="flex-box3" >
-    <view class="list-item" wx:for="{{love6}}" wx:for-item="L6"  wx:key="id">
-            <image src="{{L6.img}}" class="p_size1"/>
-            <view class="recommand_title">{{L6.title}}</view>
-            <view class="recommand_text1">{{L6.text}}</view>
-            <view class="recommand_price">{{L6.price}}</view>     
-    </view> 
+<!-- 猜你喜欢 -->
+<view class="section block">
+	<block wx:for="{{love}}" wx:key="{{item.id}}">
+        <view class="box4">{{item.name}}</view>
+        <view class="section goods-list">
+			<block wx:for="{{item.section}}" wx:key="index" wx:for-item="product">
+				<view class="goods-item">
+					<image class="goods-img" src="{{product.img}}" data-pid="{{product.id}}" mode="aspectFill" bindtap="showDetail"/>
+					<text class="title">{{product.title}}</text>
+					<text class="detial">{{product.text}}</text>
+					<text class="price">{{product.price}}</text>
+                    <!-- 折扣 -->
+					<!-- <text class="discount">{{product.discount}}</text> -->
+				</view>
+			</block>
+		</view>
+	</block>
 </view>

@@ -1,11 +1,11 @@
 <view class="main">
-    <scroll-view scroll-y="{{true}}" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
-        <block wx:for="{{navData}}" wx:for-index="id" wx:for-item="navItem" wx:key="id">
-            <view class="nav-item {{currentTab == id?'active':''}}" data-name="{{navItem.name}}" data-current="{{id}}" bindtap="switchNav">{{navItem.name}}</view>
+    <scroll-view style="height:100vh;" scroll-y="{{true}}" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}" >
+        <block wx:for="{{navData}}" wx:for-index="id" wx:for-item="navItem" wx:key="index">
+            <view class="nav-item {{currentTab == id?'active':''}}"  data-current="{{id}}" data-id="{{navItem.id}}"  bindtap="scrollToView">{{navItem.name}}</view>
         </block>
     </scroll-view>
-    <scroll-view scroll-y="{{true}}" class="nav1" scroll-with-animation="{{true}}">
-        <view class="height:100vh" wx:for="{{item}}" wx:for-item="item" wx:key="id">
+    <scroll-view scroll-y="{{true}}" style="height:100vh;" scroll-with-animation="{{true}}" scroll-into-view="{{toView}}" enable-back-to-top scroll-top="{{scrollTop}}" class="nav1">
+        <view  wx:for="{{item}}" wx:for-item="item" wx:key="id">
             <view class="flex-box" >
                 <view class="linebox">
                     <view class="line1"></view>

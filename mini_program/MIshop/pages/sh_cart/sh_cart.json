@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#ff6600",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "购物车",
+  "backgroundColor": "#ff6600",
+  "backgroundTextStyle": "light"
 }
