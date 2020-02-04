@@ -212,4 +212,95 @@ export default{
           }
         ]
       }],
+      //商品详情
+      commodity_detial:[
+        {
+          id:"1",
+          name:"Redmi K30",
+          detail:"120Hz高帧率流速屏 / 索尼6400万前后六摄 / 6.67''小孔径全面屏 / 最高可选8GB+256GB大存储 / 高通骁龙730G处理器 / 3D四曲面玻璃机身 / 4500mAh+27W快充 / 多功能NFC",
+          price:"1899元",
+          default_select:[
+            "6GB+128GB",
+            "深海微光",
+            "1",
+            "1699元"
+          ],
+          select_list:{
+            version:[
+              {
+                id:'v1',
+                name:"6GB+128GB"
+              },
+              {
+                id:'v2',
+                name:"8GB+128GB"
+              },
+              {
+                id:'v3',
+                name:"8GB+256GB"
+              }
+            ],
+            color:[
+              {
+                id:'sea',
+                name:"深海微光",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575881767.88945843.jpg'
+              },
+              {
+                id:'purple',
+                name:"紫玉幻境",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575881724.64226888.jpg'
+              },
+              {
+                id:'flower',
+                name:"花影惊鸿",
+                img:"https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575881701.90255812.jpg"
+              }
+            ]
+          },
+          // 商品轮播图
+          commodity_slides:[
+            {
+              id:1001,
+              img_url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/23990454386649d3c211df75699217c2.jpg'
+            },
+            {
+              id:1002,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/19566b7da2dffb8ec89ffb937b72e343.jpg"
+            },
+            {
+              id:1003,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/35ab5f1966c6ef33a03478b75d71fb7e.jpg"
+            },
+            {
+              id:1004,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/59eb101ed14a0ad3ba36c92ee6310fa3.jpg"
+            },
+            {
+              id:1005,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ca1a61b4d6137f1aa02d1bdd8e166a91.jpg"
+            },
+            {
+              id:1006,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0db08c6f6a3aa8152859fd080563e39d.jpg"
+            },
+            
+          ],
+          // 商品概述
+          overview:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0001a9e246e59f4ee5c5819f651093ff.jpg?f=webp&w=1080&h=1810&bg=20202",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/309c2a7663f52aa820ed637732c73f7a.jpg?f=webp&w=1080&h=1264&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/19c8ed07fb23815e255fc815cacb6242.jpg?f=webp&w=1080&h=904&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f2c8af46e68befe2b6a8551526c92b23.jpg?f=webp&w=1080&h=1294&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/286d6257c801be3ba71933f9be1519f4.jpg?f=webp&w=1080&h=1327&bg=FFFFFF"
+          ],
+          // 商品参数
+          parameter:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/950962a4ec46ec7b83ad8074e82d5507.jpg?f=webp&w=1080&h=1245&bg=0",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cf0fff7b35f74347223f24c3da1a634f.jpg?f=webp&w=1080&h=818&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d6e4afc30f14da267bd118fdc663de41.jpg?f=webp&w=1080&h=1422&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/30d87bc76316ddad2b15c50c824e7cae.jpg?f=webp&w=1080&h=889&bg=0",
+          ]
+        }
+      ]
 }

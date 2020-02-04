@@ -1,3 +1,10 @@
+const showcDetail=(e)=>{
+  const id = e.currentTarget.dataset.cid;
+  console.log(id);
+  wx.navigateTo({
+      url: `/pages/commodity/commodity?id=${id}`
+  })
+};
 Page({
   data:{
     currentTab:0,   //目前按钮所在的id
@@ -6,7 +13,7 @@ Page({
     // 左边滑块的内容
     navData:[
       {
-        id: "zhong",
+        id: "new",
         name: "新品"
       },
       {
@@ -84,6 +91,7 @@ Page({
         name:  "手机",
         cate_list:[
           {
+            id:"1",
             name: "Redmi K30 4G",
             img:  "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%20K30%204G.jpg"
           },
@@ -551,7 +559,8 @@ Page({
       toView: id,
       currentTab: cur,
     })
-  }
+  },
+  showcDetail,
   // scrollToView(e){
   //   let id = e.target.dataset.id;
   //   if(id === '1'){

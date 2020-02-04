@@ -20,6 +20,6 @@ Page({
       recommand,
       love,
     });
-    console.log(love);
+  
   },
 })

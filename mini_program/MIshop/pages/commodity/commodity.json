@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-button": "../../lib/dist/button/index",
+    "van-cell": "../../lib/dist/cell/index",
+    "mp-cell": "../../lib/weui/cell/cell",
+    "mp-cells": "../../lib/weui/cells/cells"
+    }
+}

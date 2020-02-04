@@ -8,7 +8,8 @@
     "pages/find/award/award",
     "pages/find/award/A_detail1/A_detail1",
     "pages/find/award/A_detail2/A_detail2",
-    "pages/find/award/A_detail3/A_detail3"
+    "pages/find/award/A_detail3/A_detail3",
+    "pages/commodity/commodity"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -53,6 +54,5 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
