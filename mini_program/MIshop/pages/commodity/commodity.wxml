@@ -40,10 +40,29 @@
       </view>
       <text class="weui-cell__bd intro">7天无理由退货</text>
       <view class="weui-cell__ft  weui-cell__ft_in-access"></view>
-    </view>
-    
+    </view>  
+  </view>
+  <view >
+    <van-tabs active="{{active}}"  title-active-color="#ff4a00" title-inactive-color="#c0c0c0c" duration="0.1" 	>
+      <van-tab title="商品详情">
+        <block wx:for="{{commodity.overview}}">
+          <image src="{{item}}" mode="widthFix" class="i1"/>
+        </block>
+      </van-tab>
+      <van-tab title="规格参数">
+        <block wx:for="{{commodity.parameter}}">
+          <image src="{{item}}" mode="widthFix" class="i1"/>
+        </block>
+      </van-tab>
+    </van-tabs>
   </view>
 
+  <!-- <view >
+    <mp-tabs tabs="{{tabs}}" swiperClass="weui-tabs-swiper" activeTab="{{activeTab}}" tabUnderlineColor="#ff4a00" tabActiveTextColor="#ff4a00" tabInactiveTextColor="#c0c0c0c" bindtabclick="onTabCLick"
+  bindchange="onChange">
+    </mp-tabs>
+  </view> -->
+  
 
   
 </view>

@@ -2,6 +2,7 @@ const app = getApp();
 Page({
   data:{
     commodity:[],
+    active:0
   },
   onLoad: function (options) {
     console.log(options);

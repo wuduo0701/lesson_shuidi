@@ -3,6 +3,9 @@
     "van-button": "../../lib/dist/button/index",
     "van-cell": "../../lib/dist/cell/index",
     "mp-cell": "../../lib/weui/cell/cell",
-    "mp-cells": "../../lib/weui/cells/cells"
+    "mp-cells": "../../lib/weui/cells/cells",
+    "mp-tabs": "../../lib/weui/tabs/index",
+    "van-tab": "../../lib/dist/tab/index",
+    "van-tabs": "../../lib/dist/tabs/index"
     }
 }

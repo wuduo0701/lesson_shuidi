@@ -229,15 +229,18 @@ export default{
             version:[
               {
                 id:'v1',
-                name:"6GB+128GB"
+                name:"6GB+128GB",
+                price:1699
               },
               {
                 id:'v2',
-                name:"8GB+128GB"
+                name:"8GB+128GB",
+                price:1899
               },
               {
                 id:'v3',
-                name:"8GB+256GB"
+                name:"8GB+256GB",
+                price:2199
               }
             ],
             color:[
@@ -300,6 +303,184 @@ export default{
             "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cf0fff7b35f74347223f24c3da1a634f.jpg?f=webp&w=1080&h=818&bg=FFFFFF",
             "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d6e4afc30f14da267bd118fdc663de41.jpg?f=webp&w=1080&h=1422&bg=FFFFFF",
             "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/30d87bc76316ddad2b15c50c824e7cae.jpg?f=webp&w=1080&h=889&bg=0",
+          ]
+        },
+        {
+          id:"2",
+          name:"Redmi K30 5G",
+          detail:"双模5G / 高通骁龙765G / 7nm 5G低功耗处理器 / 120Hz高帧率流速屏 / 6.67''小孔径全面屏 / 索尼6400万前后六摄 / 4500mAh+30W快充 / 3D四曲面玻璃机身 / 多功能NFC",
+          price:"2599元",
+          default_select:[
+            "6GB+64GB",
+            "深海微光",
+            "1",
+            "1999元"
+          ],
+          select_list:{
+            version:[
+              {
+                id:'v1',
+                name:"6GB+64GB",
+                price:1999
+              },
+              {
+                id:'v2',
+                name:"8GB+128GB",
+                price:2299
+              },
+              {
+                id:'v3',
+                name:"8GB+128GB",
+                price:2599
+              }
+            ],
+            color:[
+              {
+                id:'sea',
+                name:"深海微光",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575881767.88945843.jpg'
+              },
+              {
+                id:"white",
+                name: "时光独白",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575881996.51249752.jpg'
+              },
+              {
+                id:'purple',
+                name:"紫玉幻境",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575881724.64226888.jpg'
+              },
+              {
+                id:'flower',
+                name:"花影惊鸿",
+                img:"https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575881701.90255812.jpg"
+              }
+            ]
+          },
+          commodity_slides:[
+            {
+              id:2001,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/60a2762b8de102d0e886d7308b62b7c2.jpg"
+            },
+            {
+              id:2002,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/351e18cb7dd7edb6c6be52020bb0827c.jpg"
+            },
+            {
+              id:2003,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2606e3b67e47182fc6b862c43ab3e564.jpg"
+            },
+            {
+              id:2004,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88a8325484d6554a3a7bc789b604bc02.jpg"
+            },
+            {
+              id:2005,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/80501c3e98a5a44bcf0ab9be7f42e648.jpg"
+            },
+            {
+              id:2006,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4176e701ec31ce8f7002fa56fb140d19.jpg"
+            }
+          ],
+          overview:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/22c1c7124e7d80049f108e36b7beb6cb.jpg?f=webp&w=1080&h=1700&bg=20204",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/006ca0e31eb01237a2d9630f47195dec.jpg?f=webp&w=1080&h=960&bg=D4B072",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1da85b58c1a769b6799bf82200f7d1b1.jpg?f=webp&w=1080&h=738&bg=FECDA5",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/24afdc336b5b9eacbc0514d837ead960.jpg?f=webp&w=1080&h=1986&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/08fb92900a718be7dc5c78ea5f0810da.jpg?f=webp&w=1080&h=1115&bg=FFFFFF"
+          ],
+          parameter:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e1f1c3b10eed8e9349be04f791edd34d.jpg?f=webp&w=1080&h=597&bg=0",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/590471480e8485eaae1bec05f16de608.jpg?f=webp&w=1080&h=1385&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/785631b80702264814bfc017b6039981.jpg?f=webp&w=1080&h=600&bg=444444",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/454f778810a5fe69b060f9bfc076b68d.jpg?f=webp&w=1080&h=654&bg=FFFFFF"
+          ]
+        },
+        {
+          id:"3",
+          name:"小米CC9 Pro",
+          detail:"1亿像素主摄 / 全场景五摄像头 / 3200万自拍 / 10 倍混合光学变焦，50倍数字变焦 / 5260mAh ⼤电量 / ⼩米⾸款超薄屏下指纹 / 多功能NFC / 红外万能遥控 / 1216超线性扬声器",
+          price:"2599元",
+          default_select:[
+            "6GB+128GB",
+            "深海微光",
+            "1",
+            "2599元"
+          ],
+          select_list:{
+            version:[
+              {
+                id:'v1',
+                name:"6GB+128GB",
+                price:2599
+              },
+              {
+                id:'v2',
+                name:"8GB+128GB",
+                price:2799
+              },
+              {
+                id:'v3',
+                name:"8GB+256GB",
+                price:3199
+              }
+            ],
+            color:[
+              {
+                id:'green',
+                name:"魔法绿镜",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1572941319.73568944.jpg'
+              },
+              {
+                id:'ice',
+                name:"冰雪极光",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1572941393.18077211.jpg'
+              },
+              {
+                id:'dark',
+                name:"暗隐夜魔",
+                img:"https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1572941418.88848030.jpg"
+              }
+            ]
+          },
+          commodity_slides:[
+            {
+              id:3001,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2a52baef2624df2136d0610bc4a271bb.jpg"
+            },
+            {
+              id:3002,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef345f2dac0b639d2519cdbaf691fc4f.jpg"
+            },
+            {
+              id:3003,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5382bf23e48d2552fad2fef22584834a.jpg"
+            },
+            {
+              id:3004,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3abade1a775f6c86ba5963bba538e3f3.jpg"
+            },
+            {
+              id:3005,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5742bc15fcfe5e99d660406187bc8987.jpg"
+            },
+            {
+              id:3006,
+              img_url:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/86af9949b94e1bd54e9b334bf621faa7.jpg"
+            }
+          ],
+          overview:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ce07b93044e955f4d395b1af4f7f873f.jpg?f=webp&w=1080&h=2479&bg=20307",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/384da100cbc0058265582b0851c4f2c5.jpg?f=webp&w=1080&h=2419&bg=10101",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a7f755c8fe9d7ac70559095915c707c.jpg?f=webp&w=1080&h=1587&bg=10101",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/442571f78baf1278e4c731ba8e50bf9f.jpg?f=webp&w=1080&h=1582&bg=10101"
+          ],
+          parameter:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ce07b93044e955f4d395b1af4f7f873f.jpg?f=webp&w=1080&h=2479&bg=20307",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/42712c5fbb65eb59ea27fc89e2fd203b.jpg?f=webp&w=1080&h=1807&bg=141414",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ed939fae8f24cc5e6ce521f27cb8fa84.jpg?f=webp&w=1080&h=1605&bg=0",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2eacfb872a821d531264a0d7f41b3ebf.jpg?f=webp&w=1080&h=2066&bg=0"
           ]
         }
       ]

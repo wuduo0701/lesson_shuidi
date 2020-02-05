@@ -96,10 +96,12 @@ Page({
             img:  "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%20K30%204G.jpg"
           },
           {
+            id:"2",
             name: "Redmi K30 5G",
             img:  "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%20K30%205G.jpg"
           },
           {
+            id:"3",
             name: "小米CC9 Pro",
             img:  "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/%E5%B0%8F%E7%B1%B3CC9%20Pro.png"
           },
