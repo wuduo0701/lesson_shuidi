@@ -106,10 +106,12 @@ Page({
             img:  "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/%E5%B0%8F%E7%B1%B3CC9%20Pro.png"
           },
           {
-            name: "小米CC9 Pro 5G",
-            img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/%E5%B0%8F%E7%B1%B3CC9%20Pro%205G.png"
+            id:"4",
+            name: "小米9 Pro 5G",
+            img: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1569292841.03054263.jpg"
           },
           {
+            id:"5",
             name: "Redmi 8",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%208.png"
           },
@@ -206,8 +208,9 @@ Page({
             img:  "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/%E5%B0%8F%E7%B1%B3CC9%20Pro.png"
           },
           {
-            name: "小米CC9 Pro 5G",
-            img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/%E5%B0%8F%E7%B1%B3CC9%20Pro%205G.png"
+            id:"4",
+            name: "小米9 Pro 5G",
+            img: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1569292841.03054263.jpg"
           },
         ]
       },

@@ -1,0 +1,19 @@
+.user-operation {
+
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  z-index: 2;
+  border-top: 1px solid #efefef;
+}
+.add{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  background: #ff6700;
+}

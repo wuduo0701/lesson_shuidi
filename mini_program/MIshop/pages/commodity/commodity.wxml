@@ -11,7 +11,7 @@
     <text class="price">{{commodity.price}}</text>
   </view>
   <view class="weui-cell__bd select">
-    <navigator class="weui-cell weui-cell_access" hover-class="none" >
+    <navigator class="weui-cell weui-cell_access" hover-class="none" url="../address/address">
       <view class="weui-cell__bd selected">
         <text class="weui-cell__subtitle">送至</text>
         <text >南昌市 青山湖区</text>
@@ -42,27 +42,25 @@
       <view class="weui-cell__ft  weui-cell__ft_in-access"></view>
     </view>  
   </view>
-  <view >
+  <view>
     <van-tabs active="{{active}}"  title-active-color="#ff4a00" title-inactive-color="#c0c0c0c" duration="0.1" 	>
       <van-tab title="商品详情">
-        <block wx:for="{{commodity.overview}}">
+        <view wx:for="{{commodity.overview}}">
           <image src="{{item}}" mode="widthFix" class="i1"/>
-        </block>
+        </view>
       </van-tab>
       <van-tab title="规格参数">
-        <block wx:for="{{commodity.parameter}}">
+        <view wx:for="{{commodity.parameter}}">
           <image src="{{item}}" mode="widthFix" class="i1"/>
-        </block>
+        </view>
       </van-tab>
     </van-tabs>
   </view>
-
-  <!-- <view >
-    <mp-tabs tabs="{{tabs}}" swiperClass="weui-tabs-swiper" activeTab="{{activeTab}}" tabUnderlineColor="#ff4a00" tabActiveTextColor="#ff4a00" tabInactiveTextColor="#c0c0c0c" bindtabclick="onTabCLick"
-  bindchange="onChange">
-    </mp-tabs>
-  </view> -->
-  
-
-  
+  <van-goods-action>
+    <view bindtap="go_sh_cart">
+      <van-goods-action-icon icon="cart-o" text="购物车"/>
+    </view>
+    <van-goods-action-button type="warning"color="#ff4a00" text="加入购物车"  />
+    <van-goods-action-button type="danger" text="立即购买"  />
+  </van-goods-action>  
 </view>

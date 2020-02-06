@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-field":"../../../lib/dist/field/index",
+    "van-cell-group":"../../../lib/dist/cell-group/index"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "新增收货地址",
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "light"
+}

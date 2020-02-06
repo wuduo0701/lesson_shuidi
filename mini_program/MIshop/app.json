@@ -9,7 +9,9 @@
     "pages/find/award/A_detail1/A_detail1",
     "pages/find/award/A_detail2/A_detail2",
     "pages/find/award/A_detail3/A_detail3",
-    "pages/commodity/commodity"
+    "pages/commodity/commodity",
+    "pages/address/address",
+    "pages/address/add_more/add"
   ],
   "window": {
     "backgroundTextStyle": "light",

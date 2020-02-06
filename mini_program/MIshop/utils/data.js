@@ -482,6 +482,168 @@ export default{
             "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ed939fae8f24cc5e6ce521f27cb8fa84.jpg?f=webp&w=1080&h=1605&bg=0",
             "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2eacfb872a821d531264a0d7f41b3ebf.jpg?f=webp&w=1080&h=2066&bg=0"
           ]
+        },
+        {
+          id:"4",
+          name:"小米9 Pro 5G",
+          detail:"5G双卡全网通超高速网络 / 骁龙855Plus旗舰处理器 / 40W有线闪充+30W无线闪充+10W无线反充，4000mAh长续航 / 4800万全焦段三摄 / 超振感横向线性马达 / 多功能NFC",
+          price:"3699元",
+          default_select:[
+            "8GB+128GB",
+            "梦之白",
+            "1",
+            "3699元"
+          ],
+          select_list:{
+            version:[
+              {
+                id:'v1',
+                name:"8GB+128GB",
+                price:3699
+              },
+              {
+                id:'v2',
+                name:"8GB+256GB",
+                price:3799
+              },
+              {
+                id:'v3',
+                name:"12GB+256GB",
+                price:4099
+              }
+            ],
+            color:[
+              {
+                id:'dream_white',
+                name:"梦之白",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1569292841.03054263.jpg'
+              },
+              {
+                id:'black',
+                name:"钛银黑",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1569292856.29846397.jpg'
+              }
+            ]
+          },
+          commodity_slides:[
+            {
+              id:4001,
+              img_url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/505cf729a843aaa491755a05f00ad205.jpg'
+            },
+            {
+              id:4002,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9e0bcd06fad9597e8db2374e48944981.jpg"
+            },
+            {
+              id:4003,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bf9beca12366181b275ec315214034be.jpg"
+            },
+            {
+              id:4004,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/32041c2e10a3c7870b2c21bac1258cef.jpg"
+            },
+            {
+              id:4005,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b3ec1faa24b0b50ff1acf929fbada1c9.jpg"
+            },
+            {
+              id:4006,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/75e6edaebda003949f0cbe60bc2ed267.jpg"
+            },
+          ],
+          overview:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef2fd5080c95893ec12cff1ee4d463ba.jpg?f=webp&w=1080&h=1920&bg=E8F3F7",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1c1bfe3f89b44b53385337a9653a51f9.jpg?f=webp&w=1080&h=2241&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/707a8e5dc25792098ed64344aa64d586.jpg?f=webp&w=1080&h=2153&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/53c816736e709198c1ed3d10cc517334.jpg?f=webp&w=1080&h=2096&bg=FFFFFF"
+          ],
+          parameter:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/53d7c13d5b550948607491719f42d8d1.jpg?f=webp&w=1080&h=1500&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/67ff32ded7744384effefabcbc8c2086.jpg?f=webp&w=1080&h=2270&bg=10101",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1ad7f45be52b03ae6d2ef169a3e69507.jpg?f=webp&w=1080&h=1611&bg=0",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/32cba089c4279e0c73df09ba1325c443.jpg?f=webp&w=1080&h=2134&bg=0"
+          ]
+        },
+        {
+          id:"5",
+          name:"Redmi 8",
+          detail:"5000mAh大电量 / 支持18W快充 / Type-C充电接口 / 6.22''水滴全面屏 / 指纹识别+AI人脸解锁 / 骁龙八核处理器 / 1200万AI双摄 / 支持红外遥控 / 支持无线FM收音机",
+          price:"749元",
+          default_select:[
+            "3GB+32GB",
+            "宝石蓝",
+            "1",
+            "749元"
+          ],
+          select_list:{
+            version:[
+              {
+                id:'v1',
+                name:"3GB+32GB",
+                price:749
+              },
+              {
+                id:'v2',
+                name:"4GB+64GB",
+                price:799
+              }
+            ],
+            color:[
+              {
+                id:'bule',
+                name:"宝石蓝",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1570878886.62973444.jpg'
+              },
+              {
+                id:'grey',
+                name:"岩石灰",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1570878880.65599134.jpg'
+              },
+              {
+                id:'green',
+                name:"仙踪绿",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1570878871.18682080.jpg'
+              }
+            ]
+          },
+          commodity_slides:[
+            {
+              id:5001,
+              img_url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a1f81d299fed62eac8da88c58631f801.jpg'
+            },
+            {
+              id:5002,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d8e2224ebd43c42f0a0a4173da9b4753.jpg"
+            },
+            {
+              id:5003,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f8151c8d9ac5842cdffd722f70cedffd.jpg"
+            },
+            {
+              id:5004,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1513b74ecc6e57eab072cd308b5ba3a8.jpg"
+            },
+            {
+              id:5005,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/05fd2a4da0eac10e88aa7420e6e3bb33.jpg"
+            },
+            {
+              id:5006,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/24ac61f8f18b7804bdd233d64c475e76.jpg"
+            },
+          ],
+          overview:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ed9e168a1006f1a54f4e7a7ebd9b2738.jpg?f=webp&w=1080&h=1531&bg=FBFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/63c317ee3790654c0a860daeada0211f.jpg?f=webp&w=1080&h=1283&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1625755b3394b5dce84492dfc9eca37d.jpg?f=webp&w=1080&h=1174&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/12c1df533379e46b633e6b64d303e364.jpg?f=webp&w=1080&h=1313&bg=FFFFFF"
+          ],
+          parameter:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a8a5825f513cbee2c16395c3052f49d.jpg?f=webp&w=1080&h=843&bg=FEFEFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/260a25f23f255ec8405aee023d4b7561.jpg?f=webp&w=1080&h=916&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/45d53b6706f9ac6b2bc098c8a7f210c1.jpg?f=webp&w=1080&h=540&bg=13123A",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/41b9a6286cb4c100938ae08eebb833db.jpg?f=webp&w=1080&h=2038&bg=455ADA",
+          ]
         }
       ]
 }

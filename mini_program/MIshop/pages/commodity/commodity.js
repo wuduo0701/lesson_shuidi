@@ -5,15 +5,17 @@ Page({
     active:0
   },
   onLoad: function (options) {
-    console.log(options);
     const id = options.id;
-    console.log(id);
     const commodity = app.globalData.commodity_detial.filter(item=>{
       return item.id == id;
     });
-    console.log(commodity);
     this.setData({
       commodity:commodity[0]
     });
+  },
+  go_sh_cart(){
+    wx.switchTab({
+      url: "../sh_cart/sh_cart"
+    })
   },
 })

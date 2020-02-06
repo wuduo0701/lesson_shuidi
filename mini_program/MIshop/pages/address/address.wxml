@@ -1,0 +1,4 @@
+<view wx:for="{{address}}" wx:key="*this">{{item}}</view>
+<navigator  class="user-operation" url="./add_more/add"> 
+  <view class="add">新增收货地址</view>
+</navigator >
