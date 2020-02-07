@@ -116,10 +116,12 @@ Page({
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%208.png"
           },
           {
+            id:"6",
             name: "Redmi 8A",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%208A.png"
           },
           {
+            id:"7",
             name: "Redmi Note 8",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%20Note8.png"
           },

@@ -644,6 +644,85 @@ export default{
             "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/45d53b6706f9ac6b2bc098c8a7f210c1.jpg?f=webp&w=1080&h=540&bg=13123A",
             "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/41b9a6286cb4c100938ae08eebb833db.jpg?f=webp&w=1080&h=2038&bg=455ADA",
           ]
+        },
+        {
+          id:"6",
+          name:"Redmi 8A",
+          detail:"5000mAh大电量 / 支持18W快充 / Type-C充电接口 / 6.22''水滴全面屏 / 指纹识别+AI人脸解锁 / 骁龙八核处理器 / 1200万AI双摄 / 支持红外遥控 / 支持无线FM收音机",
+          price:"559元",
+          default_select:[
+            "3GB+32GB",
+            "耀夜黑",
+            "1",
+            "559元"
+          ],
+          select_list:{
+            version:[
+              {
+                id:'v1',
+                name:"32GB",
+                price:749
+              }
+            ],
+            color:[
+              {
+                id:'black',
+                name:"耀夜黑",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1573786673.16758502.png'
+              },
+              {
+                id:'blue',
+                name:"深海蓝",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1573786669.12164734.png'
+              },
+              {
+                id:'orange',
+                name:"珊瑚橙",
+                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1573786664.73737259.png'
+              }
+            ]
+          },
+          commodity_slides:[
+            {
+              id:6001,
+              img_url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/48a20f1221a3546d895afdbd940f342a.jpg'
+            },
+            {
+              id:6002,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/42964b470d44248d25e051113e22919c.jpg"
+            },
+            {
+              id:6003,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/39b1f01cadba640a531bc9da0fedd8a9.jpg"
+            },
+            {
+              id:6004,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/df747c46fe373ae86c596be84571b2da.jpg"
+            },
+            {
+              id:6005,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1b3ff99472ba2ce828826e2b2740afdf.jpg"
+            },
+            {
+              id:6006,
+              img_url: "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d2dcb2e85db8bd6dcd64c601f817b0ca.jpg"
+            },
+          ],
+          overview:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fd46d599dbfb82b68c4f180bd00dc7f6.jpg?f=webp&w=1080&h=1819&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f5fe701fe8f9914e52a095cdcb0d2b4a.jpg?f=webp&w=1080&h=1890&bg=FEFEFE",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c36a8a9d2306288a2f994fd050be64db.jpg?f=webp&w=1080&h=1653&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1ece46602305729e2eea9dffec44ccf7.jpg?f=webp&w=1080&h=1722&bg=FFFFFF"
+          ],
+          parameter:[
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3ccf44df5df59c464c9cae260f46f336.jpg?f=webp&w=1080&h=832&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/37c42cbc2c5b9bb55a64c15611358f82.jpg?f=webp&w=1080&h=859&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/291600f1e18a798e2d07d1f6ead00d77.jpg?f=webp&w=1080&h=1554&bg=FFFFFF",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a94e14025757ec34bf5cd464254b9a8e.jpg?f=webp&w=1080&h=1142&bg=48A5EA",
+          ]
+        },
+        {
+          
         }
       ]
 }

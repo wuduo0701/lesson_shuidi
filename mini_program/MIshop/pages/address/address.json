@@ -1,5 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "van-radio":"../../lib/dist/radio/index",
+    "van-radio-group":"../../lib/dist/radio-group/index"
+  },
   "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTextStyle": "black",
   "navigationBarTitleText": "选择收货地址",
