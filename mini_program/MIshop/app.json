@@ -11,7 +11,8 @@
     "pages/find/award/A_detail3/A_detail3",
     "pages/commodity/commodity",
     "pages/address/address",
-    "pages/address/add_more/add"
+    "pages/address/add_more/add",
+    "pages/select_commodity/select"
   ],
   "window": {
     "backgroundTextStyle": "light",

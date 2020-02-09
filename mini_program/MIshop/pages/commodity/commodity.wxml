@@ -1,7 +1,7 @@
 <view>
   <!--商品轮播部分 -->
   <swiper indicator-dots="{{true}}" true autoplay='true' interval='3000' circular='true' class="slides">
-        <swiper-item wx:for="{{commodity.commodity_slides}}" wx:key="*this">
+        <swiper-item wx:for="{{commodity.commodity_slides}}" wx:key="{{item.id}}">
             <image src="{{item.img_url}}" class="image" mode="widthFix"/>
         </swiper-item>
   </swiper>
@@ -18,7 +18,7 @@
       </view>
       <view class="weui-cell__ft  weui-cell__ft_in-access"></view>
     </navigator>
-    <navigator class="weui-cell weui-cell_access" hover-class="none" >
+    <navigator class="weui-cell weui-cell_access" hover-class="none" url="../select_commodity/select?id={{commodity.id}}">
       <view class="weui-cell__bd selected">
           <text class="weui-cell__subtitle">已选</text>
           <text>{{commodity.name}} {{commodity.default_select[0]}} {{commodity.default_select[1]}}</text>
@@ -45,12 +45,12 @@
   <view>
     <van-tabs active="{{active}}"  title-active-color="#ff4a00" title-inactive-color="#c0c0c0c" duration="0.1" 	>
       <van-tab title="商品详情">
-        <view wx:for="{{commodity.overview}}">
+        <view wx:for="{{commodity.overview}}" wx:key="index">
           <image src="{{item}}" mode="widthFix" class="i1"/>
         </view>
       </van-tab>
       <van-tab title="规格参数">
-        <view wx:for="{{commodity.parameter}}">
+        <view wx:for="{{commodity.parameter}}" wx:key="index">
           <image src="{{item}}" mode="widthFix" class="i1"/>
         </view>
       </van-tab>

@@ -16,7 +16,7 @@
                 </view>
             </view>
             <view class="flex-box" >
-                <view  wx:for="{{item.cate_list}}" wx:for-item="cate">
+                <view  wx:for="{{item.cate_list}}" wx:for-item="cate" wx:key="{{item.id}}">
                     <image src="{{cate.img}}" class="img-size list-item" mode="widthFix" data-cid="{{cate.id}}" bindtap="showcDetail"/>
                     <text class="font">{{cate.name}}</text>
                 </view> 

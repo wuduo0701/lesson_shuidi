@@ -1,0 +1,58 @@
+<view class="container">
+  <view class="box">
+      <view class="flexbox1">
+        <image src="{{img_url}}" mode="widthFix"/>
+      </view>
+      <view class="flexbox2">
+        <text class="title">{{commodity.name}} {{version}} {{color}}</text>
+        <text class="price">{{price}}元 </text>
+      </view>
+  </view>
+  <view class="box1">
+    <view class="weui-cells">
+      <view class="weui-cell version">
+        <view class="weui-cell__hd subtitle">版本</view>
+        <view class="weui-cell__bd">
+          <radio-group class="select-version" bindchange="select_version">
+            <block wx:for="{{commodity.select_list.version}}" wx:for-item="version" wx:key="{{index}}">
+              <label class="{{index == V_Index?'active':''}}" data-index="{{index}}" bindtap="selected_version">
+                <radio class="weui-check" value="{{version.name}},{{version.price}}" />
+                <view class="weui-check__label">
+                  <text>{{version.name}}</text>
+                </view>
+                <view class="weui-check__label">
+                  <text>{{version.price}}元</text>
+                </view>
+              </label>
+            </block>
+          </radio-group>
+        </view>
+      </view>
+      <view class="weui-cell color">
+        <view class="weui-cell__hd subtitle">颜色</view>
+        <view class="weui-cell__bd">
+          <radio-group class="select-color" bindchange="select_color">
+            <block wx:for="{{commodity.select_list.color}}" wx:for-item="color" wx:key="{{index}}">
+              <label class="{{index == C_Index?'active':''}}" data-index="{{index}}" bindtap="selected_color">
+                <radio class="weui-check" value="{{color.name}},{{color.img}}"/>
+                <view class="weui-check__label">
+                  <text>{{color.name}}</text>
+                </view>
+              </label>
+            </block>
+          </radio-group>
+        </view>
+      </view>
+    </view>
+    <view class="box2">
+      <text class="size1">购买数量</text>
+      <view class="size2">
+        <van-stepper value="{{ 1 }}" max="5" integer="true" bind:change="onChange" button-size="40" input-width="40"/>
+      </view>
+    </view>
+  </view>
+   <view class="button" bindtap="submit">确定</view>
+</view>
+
+
+

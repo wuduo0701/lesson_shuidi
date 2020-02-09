@@ -1,7 +1,7 @@
 <!-- 初始界面轮播部分 -->
 <view>
   <swiper indicator-dots="{{false}}" true autoplay='true' interval='3000' circular='true'>
-        <swiper-item wx:for="{{img_title_Urls}}" wx:for-item="img" wx:key="*this">
+        <swiper-item wx:for="{{img_title_Urls}}" wx:for-item="img" wx:key="index">
             <image src="{{img.url}}" />
         </swiper-item>
   </swiper>
@@ -9,22 +9,22 @@
 <!-- 初始界面按钮图标部分 -->
 <view class="container1">
     <view class="flex-box" >
-        <view class="list-item" wx:for="{{img_icon_Urls1}}" wx:for-item="icon1" wx:key="id">
+        <view class="list-item" wx:for="{{img_icon_Urls1}}" wx:for-item="icon1" wx:key="index">
             <image src="{{icon1.icon_img}}" class="icon-size"/>
         </view> 
     </view>
     <view class="flex-box" >
-        <view class="list-item" wx:for="{{img_icon_Urls1}}" wx:for-item="icon1" wx:key="id">
+        <view class="list-item" wx:for="{{img_icon_Urls1}}" wx:for-item="icon1" wx:key="index">
             <text class="text-center">{{icon1.name}}</text>
         </view> 
     </view>
     <view class="flex-box" >
-        <view class="list-item" wx:for="{{img_icon_Urls2}}" wx:for-item="icon2" wx:key="id">
+        <view class="list-item" wx:for="{{img_icon_Urls2}}" wx:for-item="icon2" wx:key="index">
             <image src="{{icon2.icon_img}}" class="icon-size"/>
         </view> 
     </view>
     <view class="flex-box" >
-        <view class="list-item" wx:for="{{img_icon_Urls2}}" wx:for-item="icon2" wx:key="id">
+        <view class="list-item" wx:for="{{img_icon_Urls2}}" wx:for-item="icon2" wx:key="index">
             <text class="text-center">{{icon2.name}}</text>
         </view> 
     </view>

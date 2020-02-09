@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-stepper":"../../lib/dist/stepper/index"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "商品详情",
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "light"
+}

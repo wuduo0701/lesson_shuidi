@@ -1,6 +1,6 @@
 const showcDetail=(e)=>{
   const id = e.currentTarget.dataset.cid;
-  console.log(id);
+  // console.log(id);
   wx.navigateTo({
       url: `/pages/commodity/commodity?id=${id}`
   })

@@ -2,13 +2,15 @@
   "usingComponents": {
     "van-button": "../../lib/dist/button/index",
     "van-cell": "../../lib/dist/cell/index",
-    "mp-cell": "../../lib/weui/cell/cell",
-    "mp-cells": "../../lib/weui/cells/cells",
-    "mp-tabs": "../../lib/weui/tabs/index",
     "van-tab": "../../lib/dist/tab/index",
     "van-tabs": "../../lib/dist/tabs/index",
     "van-goods-action":"../../lib/dist/goods-action/index",
     "van-goods-action-button":"../../lib/dist/goods-action-button/index",
     "van-goods-action-icon":"../../lib/dist/goods-action-icon/index"
-    }
+    },
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "商品详情",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light"
 }

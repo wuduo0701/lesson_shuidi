@@ -336,11 +336,6 @@ export default{
             ],
             color:[
               {
-                id:'sea',
-                name:"深海微光",
-                img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575881767.88945843.jpg'
-              },
-              {
                 id:"white",
                 name: "时光独白",
                 img:'https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575881996.51249752.jpg'
