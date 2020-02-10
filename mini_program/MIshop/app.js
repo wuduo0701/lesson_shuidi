@@ -3,9 +3,20 @@ import data from "./utils/data";
 App({
   onLaunch: function () {
     Object.assign(this.globalData,data)
-    // console.log(this.globalData);
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    //购物车内容
+    cart_list:[{
+      id:"",
+      name:"",
+      version:"",
+      price:"",
+      color:"",
+      img_url:"",
+      num:"",
+      selected:""
+      }
+    ]
   }
 })

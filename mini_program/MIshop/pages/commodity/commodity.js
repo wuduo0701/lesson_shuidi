@@ -2,7 +2,8 @@ const app = getApp();
 Page({
   data:{
     commodity:[],
-    active:0
+    active:0,
+    id:""
   },
   onLoad: function (options) {
     const id = options.id;
@@ -10,7 +11,8 @@ Page({
       return item.id == id;
     });
     this.setData({
-      commodity:commodity[0]
+      commodity:commodity[0],
+      id
     });
   },
   go_sh_cart(){
@@ -18,4 +20,10 @@ Page({
       url: "../sh_cart/sh_cart"
     })
   },
+  go_select(){
+    // const id = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url:`../select_commodity/select?id=` + this.data.id,
+    });
+  }
 })

@@ -2,10 +2,14 @@ const app = getApp();
 Page({
   data:{
     commodity:[],
+    id:"",
+    name:"",
     version:"",
     price:"",
     color:"",
     img_url:"",
+    num:"1",  //商品数量,默认为1
+    selected:"true",  //商品选中的状态
     V_Index: 0,
     C_Index: 0,
   },
@@ -15,7 +19,9 @@ Page({
       return item.id == id;
     });
     this.setData({
+      id:commodity[0].id,
       commodity:commodity[0],
+      name:commodity[0].name,
       version:commodity[0].select_list.version[0].name,
       price:commodity[0].select_list.version[0].price,
       color:commodity[0].select_list.color[0].name,
@@ -52,5 +58,63 @@ Page({
       C_Index
     });
   },
-  
+  //绑定选择的商品数目
+  onChange(event) {
+    const number = event.detail;
+    console.log(number)
+    this.setData({
+      num:number
+    })
+  },
+  submit(){ 
+    // const that = this;
+    // var add_id = [],
+    //     add_name = [],
+    //     add_img_url = [],
+    //     add_version = [],
+    //     add_price = [],
+    //     add_color = [],
+    //     add_num = [],
+    //     add_selected = [];
+    // add_id.push(that.data.id);
+    // add_name.push(that.data.name);
+    // add_img_url.push(that.data.img_url);
+    // add_version.push(that.data.version);
+    // add_price.push(that.data.price);
+    // add_color.push(that.data.color);
+    // add_num.push(that.data.num);
+    // add_selected.push(that.data.selected);
+
+    // app.globalData.cart_list.id = add_id;
+    // app.globalData.cart_list.name = add_name;
+    // app.globalData.cart_list.img_url = add_img_url; 
+    // app.globalData.cart_list.version = add_version;
+    // app.globalData.cart_list.price = add_price;
+    // app.globalData.cart_list.color = add_color;
+    // app.globalData.cart_list.num = add_num;
+    // app.globalData.cart_list.selected = add_selected;
+
+    const that = this;
+    wx.setStorageSync('id',that.data.id);
+    wx.setStorageSync('name',that.data.name);
+    wx.setStorageSync('img_url',that.data.img_url);
+    wx.setStorageSync('version',that.data.version);
+    wx.setStorageSync('price',that.data.price);
+    wx.setStorageSync('color',that.data.color);
+    wx.setStorageSync('num',that.data.num);
+    wx.setStorageSync('selected',that.data.selected);
+//使用wx.showToast时要使用一个延时(setTimeout)，否则成功调用后会一闪而过
+    wx.showToast({
+      title: "成功加入购物车",
+      icon: 'success',
+      duration: 2000,
+      success(){  
+        setTimeout(function(){
+          wx.navigateBack({
+            delta: 1
+          })
+        }, 1000);
+      }
+    })
+  }
 })

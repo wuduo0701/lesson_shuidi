@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "mp-slideview": "../../lib/weui/slideview/slideview"
+  },
   "navigationBarBackgroundColor": "#ff6600",
   "navigationBarTextStyle": "black",
   "navigationBarTitleText": "购物车",

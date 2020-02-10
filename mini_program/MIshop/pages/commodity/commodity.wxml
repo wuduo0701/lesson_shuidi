@@ -57,10 +57,8 @@
     </van-tabs>
   </view>
   <van-goods-action>
-    <view bindtap="go_sh_cart">
-      <van-goods-action-icon icon="cart-o" text="购物车"/>
-    </view>
-    <van-goods-action-button type="warning"color="#ff4a00" text="加入购物车"  />
+    <van-goods-action-icon icon="cart-o" text="购物车" bind:click="go_sh_cart"/>
+    <van-goods-action-button type="warning"color="#ff4a00" text="加入购物车"  bind:click="go_select"/>
     <van-goods-action-button type="danger" text="立即购买"  />
   </van-goods-action>  
 </view>

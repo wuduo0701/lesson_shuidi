@@ -11,9 +11,6 @@ Page({
     var phone = option.phone;
     var address = option.address;
     var detail = option.detail;
-    // var address1 = "address[" + this.data.address.length + "]";
-    // const length = this.data.address.length;
-    console.log(name,phone,address,detail);
     if(name && phone && address && detail){
       var add_name = that.data.name;
       var add_phone = that.data.phone;
