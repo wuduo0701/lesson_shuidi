@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "van-radio":"../../lib/dist/radio/index",
-    "van-radio-group":"../../lib/dist/radio-group/index"
+    "van-radio-group":"../../lib/dist/radio-group/index",
+    "mp-slideview": "../../lib/weui/slideview/slideview"
   },
   "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTextStyle": "black",

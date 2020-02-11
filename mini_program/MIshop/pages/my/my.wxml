@@ -1,2 +1,11 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="container">
+  <view class="box">
+    <view class="image">
+      <open-data type="userAvatarUrl" ></open-data>
+    </view>
+    <view class="name">
+      <open-data type="userNickName" ></open-data>
+    </view>
+    <view class="id">小米ID：2334274657</view>
+  </view>
+</view>

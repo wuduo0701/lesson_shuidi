@@ -1,18 +1,17 @@
-<!-- <van-radio-group v-model="radio">
-  <block wx:for="{{name}}">
-   <van-radio name="1">{{item}}</van-radio>
-  </block>
-</van-radio-group> -->
-
 <view class="box">
-  <view class="address">
-    <view class="box1">
-      <text class="phone" wx:for="{{phone}}" wx:key="index">{{item}}</text>
-      <text class="name" wx:for="{{name}}" wx:key="index">{{item}} 收</text>
-    </view>
-    <view class="box1">
-      <text class="phone" wx:for="{{address}}" wx:key="index">{{item}}</text>
-      <text class="name" wx:for="{{detail}}" wx:key="index">{{item}}</text>
+  <view class="address" wx:for="{{address}}" wx:key="index">
+    <view class="contaner">
+      <view class="box1">
+        <text class="phone">{{item.phone}}</text>
+        <text class="name">{{item.name}} 收</text>
+      </view>
+      <view class="box1">
+        <text class="phone">{{item.address}}</text>
+        <text class="name">{{item.detail}}</text>
+      </view>
+      <view class="button" bindtap="delete" data-index="{{index}}">
+        <text >删除</text>
+      </view>
     </view>
   </view>
   <navigator  class="user-operation" url="./add_more/add"> 

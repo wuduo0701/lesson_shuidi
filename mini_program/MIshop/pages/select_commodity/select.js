@@ -9,7 +9,7 @@ Page({
     color:"",
     img_url:"",
     num:"1",  //商品数量,默认为1
-    selected:"true",  //商品选中的状态
+    selected:false,  //商品选中的状态
     V_Index: 0,
     C_Index: 0,
   },
@@ -103,6 +103,23 @@ Page({
     wx.setStorageSync('color',that.data.color);
     wx.setStorageSync('num',that.data.num);
     wx.setStorageSync('selected',that.data.selected);
+
+    const value = wx.getStorageSync('cart_list');
+    const temp = {
+      'id':wx.getStorageSync('id'),
+      'name': wx.getStorageSync('name'),
+      'img_url': wx.getStorageSync('img_url'),
+      'version': wx.getStorageSync('version'),
+      'price': wx.getStorageSync('price'),
+      'color': wx.getStorageSync('color'),
+      'num': wx.getStorageSync('num'),
+      'selected': wx.getStorageSync('selected'),
+    }
+    if(value == ""){
+      wx.setStorageSync('cart_list', [temp]);
+    }else{
+      wx.setStorageSync('cart_list', [temp, ...value]);
+    }
 //使用wx.showToast时要使用一个延时(setTimeout)，否则成功调用后会一闪而过
     wx.showToast({
       title: "成功加入购物车",

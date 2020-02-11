@@ -1,1 +1,33 @@
-/* pages/my/my.wxss */
+.container{
+  padding: 0;
+  background-color: #efefef;
+  height: 100vh;
+}
+.container .box{
+  margin-top: 20rpx;
+  height: 180rpx;
+  background-color: #fff;
+  width: 100vh
+}
+.container .box .image{
+  width: 150rpx;
+  height: 150rpx;
+  padding-top: 15rpx;
+  padding-left: 30rpx;
+  position: relative;
+  right: -180rpx;
+}
+.container .box .name{
+  font-size: 12pt;
+  position: relative;
+  left: 400rpx;
+  top: -130rpx;
+}
+.container .box .id{
+  font-size: 10pt;
+  position: relative;
+  left: 400rpx;
+  top:-110rpx;
+  color: #9c9c9c;
+}
+

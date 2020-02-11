@@ -8,27 +8,25 @@ let app = getApp();
 // };
 Page({
   data: {
-    name:"",
-    phone:"",
-    address:"",
-    details:""
+    address:[]
   },
   formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value.name);
-    // let address = e.detail.value;
-    this.setData({
-      name:e.detail.value.name,
-      phone:e.detail.value.phone,
-      address:e.detail.value.address,
-      detail:e.detail.value.detail
-      // detail:detail
-    })
+    const address = wx.getStorageSync('address');
+    const temp = {
+      "name":e.detail.value.name,
+      "phone":e.detail.value.phone,
+      "address":e.detail.value.address,
+      "detail":e.detail.value.detail
+    }
+    if(address == ""){
+      wx.setStorageSync('address', [temp]);
+    }else{
+      wx.setStorageSync('address', [temp, ...address]);
+    }
   },
   showdetail(e){
     wx.navigateTo({
-      url: `/pages/address/address?name=`+this.data.name+'&phone='+this.data.phone+'&address='+this.data.address+'&detail='+this.data.detail
-  })
+     url: "/pages/address/address"
+    })
   }
-  // showcDetail
-  
 })
