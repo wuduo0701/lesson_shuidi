@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#ff6600",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "手机频道",
+  "backgroundColor": "#ff6600",
+  "backgroundTextStyle": "light"
+}

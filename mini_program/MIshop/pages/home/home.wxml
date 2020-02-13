@@ -10,7 +10,9 @@
 <view class="container1">
     <view class="flex-box" >
         <view class="list-item" wx:for="{{img_icon_Urls1}}" wx:for-item="icon1" wx:key="index">
-            <image src="{{icon1.icon_img}}" class="icon-size"/>
+            <navigator url="{{icon1.url}}">
+                <image src="{{icon1.icon_img}}" class="icon-size"/>
+            </navigator>
         </view> 
     </view>
     <view class="flex-box" >

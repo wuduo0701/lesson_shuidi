@@ -12,7 +12,6 @@ swiper{
 .container2{
   height: 560rpx;
   width: 750rpx;
-
 }
 .box1{
   height: 100rpx;

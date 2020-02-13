@@ -5,11 +5,13 @@ const showcDetail=(e)=>{
       url: `/pages/commodity/commodity?id=${id}`
   })
 };
+
 Page({
   data:{
     currentTab:0,   //目前按钮所在的id
     navScrollLeft: 0,
     scrollTop:0,
+    toView:"",
     // 左边滑块的内容
     navData:[
       {
@@ -87,7 +89,7 @@ Page({
     item:[
       //手机部分数据
       {
-        id: "xing",
+        id: "new",
         name:  "手机",
         cate_list:[
           {
@@ -126,10 +128,12 @@ Page({
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%20Note8.png"
           },
           {
+            id:"8",
             name: "小米CC9",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/%E5%B0%8F%E7%B1%B3CC9.png"
           },
           {
+            id:"9",
             name: "小米CC9e",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/%E5%B0%8F%E7%B1%B3CC%209e.png"
           }
@@ -137,10 +141,11 @@ Page({
       },
       // 家电部分数据
       {
-        // id: "2",
+        id: "jia_ele",
         name: "家电",
         cate_list:[
           {
+            id:"10",
             name: "小米电视5",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/ele_appliance/%E5%B0%8F%E7%B1%B3%E7%94%B5%E8%A7%865%2055%E8%8B%B1%E5%AF%B8.png"
           },
@@ -156,10 +161,11 @@ Page({
       },
       //电脑部分数据
       {
-        // id: "3",
+        id: "computer",
         name: "电脑",
         cate_list:[
           {
+            id:"13",
             name:"RedmiBook14",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/computer/RedmiBook14.png"
           },
@@ -179,6 +185,7 @@ Page({
         name: "众筹好物",
         cate_list:[
           {
+            id:"16",
             name: "电饭煲",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/funding/%E7%94%B5%E9%A5%AD%E7%85%B2.jpg"
           },
@@ -198,14 +205,17 @@ Page({
         name: "小米系列",
         cate_list:[
           {
+            id:"8",
             name: "小米CC9",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/%E5%B0%8F%E7%B1%B3CC9.png"
           },
           {
+            id:"9",
             name: "小米CC9e",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/%E5%B0%8F%E7%B1%B3CC%209e.png"
           },
           {
+            id:"3",
             name: "小米CC9 Pro",
             img:  "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/%E5%B0%8F%E7%B1%B3CC9%20Pro.png"
           },
@@ -222,22 +232,27 @@ Page({
         name: "Redmi",
         cate_list:[
           {
+            id:"1",
             name: "Redmi K30 4G",
             img:  "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%20K30%204G.jpg"
           },
           {
+            id:"2",
             name: "Redmi K30 5G",
             img:  "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%20K30%205G.jpg"
           },
           {
+            id:"5",
             name: "Redmi 8",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%208.png"
           },
           {
+            id:"6",
             name: "Redmi 8A",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%208A.png"
           },
           {
+            id:"7",
             name: "Redmi Note8",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/phone/Redmi%20Note8.png"
           },
@@ -249,6 +264,7 @@ Page({
         name: "黑鲨系列",
         cate_list:[
           {
+            id:"19",
             name: "黑鲨游戏手机",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/%E9%BB%91%E9%B2%A8%E6%89%8B%E6%9C%BA/%E9%BB%91%E9%B2%A8%E6%89%8B%E6%9C%BA.png"
           }
@@ -272,6 +288,7 @@ Page({
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/%E7%94%B5%E8%A7%86/%E5%B0%8F%E7%B1%B3%E7%94%B5%E8%A7%864C.png"
           },
           {
+            id:"10",
             name: "小米电视5",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/catelist/%E7%94%B5%E8%A7%86/%E5%B0%8F%E7%B1%B3%E7%94%B5%E8%A7%865%2055%E8%8B%B1%E5%AF%B8.png"
           },
@@ -283,6 +300,7 @@ Page({
         name: "盒子",
         cate_list:[
           {
+            id:"20",
             name: "盒子4",
             img: "https://bucket-1300705541.cos.ap-chengdu.myqcloud.com/Cate/box/%E7%9B%92%E5%AD%904.png",
           },
@@ -561,7 +579,7 @@ Page({
   scrollToView(e){   
     const cur = e.currentTarget.dataset.current; 
     const id = e.currentTarget.dataset.id;
-    console.log(id);
+    // console.log(id);
     this.setData({
       toView: id,
       currentTab: cur,
@@ -581,5 +599,4 @@ Page({
   //     })
   //   }
   // }
-
 })

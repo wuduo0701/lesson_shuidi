@@ -1,3 +1,9 @@
+const showDetail=(e)=>{
+  const id = e.currentTarget.dataset.pid;
+  wx.navigateTo({
+      url: `/pages/commodity/commodity?id=${id}`
+  })
+};
 const app = getApp();
 Page({
   data:{
@@ -20,6 +26,6 @@ Page({
       recommand,
       love,
     });
-  
   },
+  showDetail,
 })

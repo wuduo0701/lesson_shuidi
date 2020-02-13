@@ -21,7 +21,6 @@ Page({
     })
   },
   go_select(){
-    // const id = e.currentTarget.dataset.id;
     wx.navigateTo({
       url:`../select_commodity/select?id=` + this.data.id,
     });

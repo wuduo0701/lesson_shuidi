@@ -61,7 +61,7 @@ Page({
   //绑定选择的商品数目
   onChange(event) {
     const number = event.detail;
-    console.log(number)
+    // console.log(number)
     this.setData({
       num:number
     })

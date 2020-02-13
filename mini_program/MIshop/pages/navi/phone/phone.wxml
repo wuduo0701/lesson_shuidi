@@ -1,0 +1,16 @@
+<swiper indicator-dots="{{true}}" true autoplay='true' interval='3000' circular='true' class="slides">
+  <swiper-item wx:for="{{slides}}" wx:key="{{item.id}}">
+    <image src="{{item.url}}" class="image" mode="modeFix"/>
+  </swiper-item>
+</swiper>
+<view class="section goods-list">
+  <block wx:for="{{phone_list}}" wx:key="index" wx:for-item="phone">
+    <view class="goods-item">
+      <image class="goods-img" src="{{phone.img}}" data-pid="{{phone.id}}" mode="aspectFill" bindtap="showDetail"/>
+      <text class="title">{{phone.name}}</text>
+      <text class="detail">{{phone.detail}}</text>
+      <text class="price">{{phone.price}}</text>
+      <!-- <text class="discount">{{product.discount}}</text> -->
+    </view>
+  </block>
+</view>
