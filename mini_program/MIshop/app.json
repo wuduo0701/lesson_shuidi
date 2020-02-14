@@ -15,7 +15,8 @@
     "pages/select_commodity/select",
     "pages/navi/phone/phone",
     "pages/navi/tv/tv",
-    "pages/navi/computer/computer"
+    "pages/navi/computer/computer",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

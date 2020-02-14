@@ -1,3 +1,18 @@
+<!-- 自定义导航栏 -->
+<view>
+  <view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      <view class="INinputheader">
+				<image src="../../images/icon/mi.png" mode="widthFix" class="image"/>
+				<text>小米</text>
+        <icon class="INsearchicon" type="search" size="12"/>
+        <navigator url="../search/search">
+            <input class="weui-input" placeholder="搜索商品"/>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
 <!-- 初始界面轮播部分 -->
 <view>
   <swiper indicator-dots="{{false}}" true autoplay='true' interval='3000' circular='true'>

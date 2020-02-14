@@ -25,6 +25,7 @@ Page({
       img_icon_Urls2,
       recommand,
       love,
+      navH: app.globalData.navHeight
     });
   },
   showDetail,

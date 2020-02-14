@@ -1,8 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarBackgroundColor": "#ff6600",
-  "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "小米商城",
-  "backgroundColor": "#ff6600",
-  "backgroundTextStyle": "light"
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
 }

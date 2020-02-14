@@ -486,6 +486,7 @@ export default{
           name:"小米9 Pro 5G",
           detail:"5G双卡全网通超高速网络 / 骁龙855Plus旗舰处理器 / 40W有线闪充+30W无线闪充+10W无线反充，4000mAh长续航 / 4800万全焦段三摄 / 超振感横向线性马达 / 多功能NFC",
           price:"3699元",
+          
           default_select:[
             "8GB+128GB",
             "梦之白",
