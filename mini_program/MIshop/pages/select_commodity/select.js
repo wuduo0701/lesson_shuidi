@@ -66,34 +66,7 @@ Page({
       num:number
     })
   },
-  submit(){ 
-    // const that = this;
-    // var add_id = [],
-    //     add_name = [],
-    //     add_img_url = [],
-    //     add_version = [],
-    //     add_price = [],
-    //     add_color = [],
-    //     add_num = [],
-    //     add_selected = [];
-    // add_id.push(that.data.id);
-    // add_name.push(that.data.name);
-    // add_img_url.push(that.data.img_url);
-    // add_version.push(that.data.version);
-    // add_price.push(that.data.price);
-    // add_color.push(that.data.color);
-    // add_num.push(that.data.num);
-    // add_selected.push(that.data.selected);
-
-    // app.globalData.cart_list.id = add_id;
-    // app.globalData.cart_list.name = add_name;
-    // app.globalData.cart_list.img_url = add_img_url; 
-    // app.globalData.cart_list.version = add_version;
-    // app.globalData.cart_list.price = add_price;
-    // app.globalData.cart_list.color = add_color;
-    // app.globalData.cart_list.num = add_num;
-    // app.globalData.cart_list.selected = add_selected;
-
+  submit(){
     const that = this;
     wx.setStorageSync('id',that.data.id);
     wx.setStorageSync('name',that.data.name);
@@ -103,7 +76,6 @@ Page({
     wx.setStorageSync('color',that.data.color);
     wx.setStorageSync('num',that.data.num);
     wx.setStorageSync('selected',that.data.selected);
-
     const value = wx.getStorageSync('cart_list');
     const temp = {
       'id':wx.getStorageSync('id'),
