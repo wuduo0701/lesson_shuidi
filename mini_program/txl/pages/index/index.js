@@ -109,6 +109,7 @@ Page({
   },
   scrollToView(e){
     let id = e.target.dataset.id;
+    console.log(id);
     if(id === '热'){
       this.setData({
         scrollTop: 0
