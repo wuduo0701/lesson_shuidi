@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="nav">
+    <a href="#/page1">page1</a>
+    <a href="#/page2">page2</a>
+    <a href="#/page3">page3</a>
+  </div>
+  <div id="container"></div>
+ <script>
+  // window.addEventListener('hashchange', function(event) {
+  //   let newURL = event.newURL; // hash 改变后的新 url
+  //   let oldURL = event.oldURL;
+  //   console.log(newURL, oldURL);
+  //   document.getElementById('root')
+  //     .innerHTML = window.location.hash
+  // })
+  class HashRouter {
+    constructor() {
+      this.routers = {}; //配置， 是设计关键点 routes 
+      //存储路由配置的 hash key  val Component
+      window.addEventListener('hashchange', () => {
+        let hash = window.location.hash.slice(1),
+          handler;
+        // console.log(hash);
+        // handler = this.routers[hash];
+        if(!hash) {
+          handler = this.routers.index;
+        } else {
+          handler = this.routers[hash];
+        }
+        // console.log(this);
+        // handler();
+        handler.call(this);
+      })
+    }
+    // hahschange 后执行哪个函数
+    // vue 组件 函数式组件 callback
+    register(hash, callback){
+      this.routers[hash] = callback;
+    } 
+    //初始化时执行
+    registerIndex(cb = () => {}) {
+      // cb();
+      this.routers.index = cb;
+    }
+  }
+  // new VueRouter({
+  //   mode: 'history',
+  //   routes: []
+  // })
+  let router = new HashRouter(); //路由对象， 类型为hash
+  let container =
+   document.getElementById('container'); // 根组件
+  router.registerIndex(() => container.innerHTML = '首页')
+  router.register('/page1', function ()  
+  {
+    console.log(this.routers);
+    container.innerHTML = '/page1';
+  }) // 路由 对应执行事  //.vue template部分
+  router.register('/page2', () => container.innerHTML = '/page2'); 
+  router.register('/page3', () => container.innerHTML = '/page3'); 
+  </script>
+</body>
+</html>
