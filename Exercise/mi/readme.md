@@ -1,4 +1,4 @@
-> 声明：此作品只用于个人学习
+
 # 前言 
 
 微信小程序作为一款耳熟能详的应用，相信大家或多或少都已经有过这方面的接触了。作为一名刚接触前端不久的小白，手写一款小程序是一次很好的对知识的巩固。下面让我们来开始小程序的开发吧。
@@ -122,7 +122,7 @@ App({
 const app = getApp();
 `
 
-下面时商城首页的js文件
+下面是商城首页的js文件
 
 `
 const showDetail=(e)=>{
@@ -313,7 +313,7 @@ const showcDetail=(e)=>{
 ![alt](https://user-gold-cdn.xitu.io/2020/2/16/1704d8e4a7545ae4?w=360&h=644&f=gif&s=5143449)
 ### 页面解析
 - 这里为所有商品的统一界面，跳转时我们会把相应商品的数据传输到这个页面，这样显示的就是为不同的商品界面。
-- 由于原生的weui有些太丑了，就引用了有赞的tabs和GoodsAction组件。有兴趣的童鞋可以去有赞的官网看看。
+- 由于原生的weui有些太丑了，就引用了有赞的[tabs](https://youzan.github.io/vant-weapp/#/tab)和[GoodsAction](https://youzan.github.io/vant-weapp/#/goods-action)组件。有兴趣的童鞋可以点击查看看。
 
 这里贴代码的时候mackdown编辑出了问题，所以只贴了tabs标签和下方的加入购物车部分。完整的代码可以点[这里](https://github.com/1970186643/lesson_shuidi/blob/master/mini_program/MIshop/pages/commodity/commodity.wxml)
 
@@ -361,7 +361,7 @@ const showcDetail=(e)=>{
     });
   },
 `
-- 这里同样用了有赞的步进器组件
+- 这里同样用了有赞的步进器[stepper](https://youzan.github.io/vant-weapp/#/stepper)组件
 
 wxml
 
@@ -584,4 +584,4 @@ wx:if="{{cart_list == ''}}"
 这里我们只做简单的页面，头像和名字都是通过open-data来获取的微信头像和名字。这里大部分都是需要后台来做的，就没有过多的花费时间了。
 
 # 结语
-再写这个项目的时候碰到了许多的难题，每天都是在写bug和debug中度过。程序员的一天就是这么真实，但是这也让我学习了很多，写代码一定要亲手尝试，这样才能更快的提升自己的能力。由于小米商城这个项目是在太大了，只做了部分主要功能。希望能给予他人一点帮助，如果文章中有错误或不妥之处，欢迎大家指正。这里是项目的[地址](https://github.com/1970186643/lesson_shuidi/tree/master/mini_program/MIshop)，如果觉得还不错的话，就star一下吧。
+在写这个项目的时候碰到了许多的难题，每天都是在写bug和debug中度过。程序员的一天真的好真实，但是这也让我学习了很多，写代码一定要亲手尝试，这样才能更快的提升自己的能力。由于小米商城这个项目是在太大了，只做了部分主要功能。希望能给予他人一点帮助，如果文章中有错误或不妥之处，欢迎大家指正。这里是项目的[地址](https://github.com/1970186643/lesson_shuidi/tree/master/mini_program/MIshop)，如果觉得还不错的话，就star一下吧。
