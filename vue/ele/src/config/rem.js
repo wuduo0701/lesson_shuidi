@@ -11,7 +11,7 @@
 
       if (!clientWidth) return;
       // 设计稿  750  375  640  320
-      docEl.style.fontSize = 20 * clientWidth/375 + 'px';
+      docEl.style.fontSize = 20 * clientWidth/320 + 'px';
       // console.log(clientWidth);
       // ?设备可能由纵向变模着拿 手机发生变化
       win.addEventListener(resizeEvt, recalc, false);

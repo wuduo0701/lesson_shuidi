@@ -22,7 +22,8 @@ export default {
 </script>
 <style lang="styl" scoped>
 @import "../../style/mixin.styl";
-
+/* $blue是定义的stylus变量 
+position fixed固定定位*/
 #head_top
   background-color $blue
   position fixed
@@ -43,6 +44,6 @@ export default {
     left 0.4rem
     wh(0.6rem, 1rem)
     line-height 2.2rem
-    margin-left .4rem 
+    margin-left 0.4rem 
 
 </style>
