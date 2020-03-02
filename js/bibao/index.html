@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="#" id="size-12">12像素大小</a>
+  <a href="#" id="size-14">14像素大小</a>
+  <a href="#" id="size-16">16像素大小</a>
+</body>
+<script>
+  function makesize(size){
+    return function(){
+      document.body.style.fontSize = size + 'px';
+    }
+  }
+  // 通过闭包实现改变字体大小
+  var size12 = makesize(12),
+      size14 = makesize(14),
+      size16 = makesize(16);
+  document.getElementById('size-12').onclick = size12;
+  document.getElementById('size-14').onclick = size14;
+  document.getElementById('size-16').onclick = size16;
+</script>
+</html>
