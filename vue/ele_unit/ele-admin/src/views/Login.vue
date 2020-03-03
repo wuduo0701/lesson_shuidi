@@ -17,15 +17,91 @@
         <div class="manage_tip">
           <p>elm后台管理系统</p>
         </div>
+        <!-- element-ui 表单:model props 是el-form的需要 收集数据 json  form 功能组件 -->
+        <el-form :model="loginForm" :rules="rules" ref="loginForm">
+          <!-- el-form-item 容器  需要? 各司其职 eleme -->
+          <el-form-item prop="username">
+            <!-- 双向绑定指令 -->
+            <el-input v-model="loginForm.username" placeholder="用户名">
+            </el-input>
+          </el-form-item>
+          <el-form-item prop="password">
+            <!-- 双向绑定指令 -->
+            <el-input v-model="loginForm.password" placeholder="密码" type="password">
+            </el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button type="primary" @click="submitForm('loginForm')" class="submit_btn">登陆</el-button>
+          </el-form-item>
+        </el-form>
       </section>
     </transition>
   </div>
 </template>
 <script>
+// 后端请示都应该在api里， 不要把api业务
+// 写在组件里
+import { login } from '@/api/getData';
+
 export default {
   data() {
     return {
-      showLogin: false
+      showLogin: false,
+      loginForm: {
+        username: '',
+        password: ''
+      },
+      rules: {
+        username: [
+          { required: true, message: '请输入用户名', trigger: 'blur' }
+        ],
+        // 渐进式 
+        password: [
+          {
+            required: true, message: '请输入密码', trigger: 'blur'
+          }
+        ]
+      }
+    }
+  },
+  methods: {
+    async submitForm(formName) {
+      // js 好学， 类型 typeless 语言  java  c++ 内存less  
+      // vue 比原生的js 更好学 domless  
+      // serverless 
+      this.$refs[formName].validate(async (valid) => {
+        // console.log(valid);
+        if (valid) {
+          // 跟后端api通信吧， 登录  
+          // api 异步的ajax请求 es7 给我们的能力
+          const res = await login({
+            user_name: this.loginForm.username, 
+            password: this.loginForm.password
+          });
+          console.log(res, '-------');
+          // 模拟  mock 把能写的代码写完 减少不确定性
+
+          if (res.status == 1) {
+            this.$message({
+              type: 'success',
+              message: '登录成功'
+            });
+          } else {
+            this.$message({
+              type: 'error',
+              message: res.message
+            })
+          }
+        } else {
+          // iview $message
+          // this -> component.prototype -> vue 根实例 -> vue.use()
+          this.$notify.error({
+            title: '错误',
+            message: '请输入正确的用户名和密码',
+            offset:100
+          });
+        }
+      })
     }
   },
   mounted() {
