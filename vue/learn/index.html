@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="vue-app">
+    <h1>{{name}}</h1>
+    <!-- v-bind属性绑定 即v-bind:href 可用缩写:hrefs-->
+    <a :href="website">bilibili</a>
+    <!-- 在上面加载一段html可用v-html -->
+    <p v-html="webtag"></p>
+    <p>My age is {{age}}</p>
+    <!-- 事件处理方法既可以在methods里定义函数，也可以在其中写一些简单代码
+    可以用 v-on 指令监听 DOM 事件，并在触发时运行一些 JavaScript 代码。 -->
+    <button @click="age ++">加一岁</button>
+    <button @click="subtract">减一岁</button>
+    <div id="canvas" v-on:mousemove="updataXY">{{x}},{{y}}</div>
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
