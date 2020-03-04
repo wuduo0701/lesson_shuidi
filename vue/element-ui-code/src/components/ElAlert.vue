@@ -3,9 +3,9 @@
     <div 
       class="el-alert"
       :class="[typeClass, center ? 'is-center' : '', 'is-' + effect]"
-      v-show="visible"
+      v-show="visible" 
     >
-      <i class="el-alert__icon" :class="[ iconClass ]" v-if="showIcon"></i>
+      <i class="el-alert__icon" :class="[ iconClass ]"  v-if="showIcon"></i>
       <div class="el-alert__content">
       <!-- ElAlert -->
         <span class="el-alert__title">
@@ -43,7 +43,7 @@ export default {
         type: String,
         default: ''
     },
-    // showIcon: Boolean,
+    showIcon: Boolean,
     center: Boolean, 
     effect: {
       type: String,
@@ -66,7 +66,8 @@ export default {
   data() {
     return {
       visible: true,
-      showIcon:true
+      // showIcon: true
+      isshow: "true"
     }
   },
   methods: {
