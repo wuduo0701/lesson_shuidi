@@ -4,8 +4,8 @@ new Vue({
   data: {
     x:0,
     y:0,
-    age:30,
-    name: "lin",
+    age:"",
+    name: "",
     webtag:"<a href='https://www.bilibili.com/video/av44699553?p=5'>bilibili</a>",
     website:"https://www.bilibili.com/video/av44699553?p=5"
   
@@ -22,6 +22,13 @@ new Vue({
       // console.log(event)
       this.x = event.offsetX;
       this.y = event.offsetY;
+    },
+    // refs的使用也可以实现双向数据绑定
+    logname:function(){
+      this.name = this.$refs.name.value;
+    },
+    logage:function(){
+      this.age = this.$refs.age.value;
     }
   }
 });
