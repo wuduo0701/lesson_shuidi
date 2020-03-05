@@ -31,11 +31,11 @@
     <h2 v-if="success">网络连接成功：200</h2>
     <h1 v-show="error">v-show显示</h1> -->
     <p>v-for条件</p>
-    <ul>
+    <template>
       <li v-for="item in users" :key="item.index">
         {{item.name}}-{{item.age}}
       </li>
-    </ul>
+    </template>
     <ul>
       <li v-for="(item,index) in users">
         {{index}}-{{item.name}}

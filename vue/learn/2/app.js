@@ -38,14 +38,14 @@ new Vue({
     //   }
     // }
     // evenNumbers:function(){
-    //   return this.numbers.fliter(number =>{
+    //   return this.numbers.fliter((number) =>{
     //     return number % 2 === 0
     //   })
     // },
-    // evenNumbers: function () {
-    //   return this.numbers.filter(function (number) {
-    //     return number % 2 === 0
-    //   })
-    // }
+    evenNumbers: function () {
+      return this.numbers.filter(function (number) {
+        return number % 2 === 0
+      })
+    }
   }
 })
