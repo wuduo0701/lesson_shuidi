@@ -24,3 +24,4 @@ Counter.increment();
 console.log(Counter.value());
 Counter.decrement();
 console.log(Counter.value());
+// 以这种方式使用闭包，提供了许多与面向对象编程相关的好处 —— 特别是数据隐藏和封装。
