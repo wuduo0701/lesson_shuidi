@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>动态css class</h1>
+    <h2>示例1</h2>
+    <!-- <div @click="changeColor=!changeColor" :class="{changeColor:changeColor}">
+      <span>
+        Herry
+      </span>
+    </div> -->
+    <h2>示例2</h2>
+    <button @click="changeColor = !changeColor">changeColor</button>
+    <button @click="changeLength = !changeLength">changeLength</button>
+    <div :class="compClasses()">
+      <span>
+        朵雾
+      </span>
+    </div>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
