@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- <h1>动态css class</h1>
+    <h2>示例1</h2> -->
+    <!-- <div @click="changeColor=!changeColor" :class="{changeColor:changeColor}">
+      <span>
+        Herry
+      </span>
+    </div> -->
+    <!-- <h2>示例2</h2>
+    <button @click="changeColor = !changeColor">changeColor</button>
+    <button @click="changeLength = !changeLength">changeLength</button>
+    <div :class="compClasses()">
+      <span>
+        朵雾
+      </span>
+    </div> -->
+    <!-- <p>v-if条件</p>
+    <button @click="error=!error">error</button>
+    <button @click="success=!success">success</button>
+    <h2 v-if="error">网络连接失败：404</h2>
+    <h2 v-if="success">网络连接成功：200</h2>
+    <h1 v-show="error">v-show显示</h1> -->
+    <p>v-for条件</p>
+    <template>
+      <li v-for="item in users" :key="item.index">
+        {{item.name}}-{{item.age}}
+      </li>
+    </template>
+    <ul>
+      <li v-for="(item,index) in users">
+        {{index}}-{{item.name}}
+      </li>
+    </ul>
+    <ul>
+      <li v-for="(value,name,index) in object">
+        {{name}}: {{value}}:{{index}}
+      </li>
+    </ul>
+    <h2 v-for="item in numbers"> {{item}}</h2>
+    <button @click="evenNumbers">点我</button>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
