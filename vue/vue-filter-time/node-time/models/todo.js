@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-// 数据存储（物理）是目的， 但不猴急， 结婚  模型设计 投资/住/学区 
+// 数据存储（物理）是目的，
 const todoSchema = mongoose.Schema({
   title: { type: String, required: true },
   address: String,
