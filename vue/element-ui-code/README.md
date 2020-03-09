@@ -22,3 +22,22 @@
 - .$emit子组件向父组件通信的方式
   (父组件中调用子组件时绑定事件，在子组件中使用$emit方法调用该事件并传参)
   父组件向子组件通信可以有props，refs
+
+
+  1.怎么样使用Element-ui
+  import ElementUI from 'element-ui'
+  Vue.use(ElementUI)  全局使用
+
+  - Vue.use 背后在干什么
+  js越少越好，项目中用不到等所有组件 只使用部分，怎么实现？项目越快
+
+- 每个组件都是一个目录
+  curousel  组件  设计成一个父子组件 各司其职 
+  curousel-item
+  划分职责
+  容器组件  横向|竖向
+  子组件 slot
+
+vue中的
+
+$parent??
