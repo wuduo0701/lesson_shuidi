@@ -17,6 +17,7 @@ timeout(1000).then(() => {
   console.log('done')
 })
 
+//当所有同步的任务执行完才会执行then里的回调,所以resolved最后输出
 let promise = new Promise(function(reslove, reject){
   console.log('Promise');
   reslove();
