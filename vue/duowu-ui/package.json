@@ -1,6 +1,6 @@
 {
-  "name": "duowu-ui",
-  "version": "0.1.0",
+  "name": "duowu",
+  "version": "0.1.2",
   "description": "设计的第一个vue框架ui",
   "keywords": [
     "component",
@@ -12,7 +12,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name duowui --dist lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name duowu --dest lib packages/index.js",
+    "main": "lib/duowu.umd.min.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",
