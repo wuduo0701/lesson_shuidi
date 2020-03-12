@@ -5,3 +5,5 @@
   store   state 两种获取方式
   this.$store.state
   computed  mapGetters
+
+  async??

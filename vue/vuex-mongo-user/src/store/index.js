@@ -71,6 +71,15 @@ export default new Vuex.Store({
         context.commit('setUsers', users)
       })
     },
+    queryTag(context, evt) {
+      console.log(arguments);
+      const tag = evt.target.value;
+      // console.log(tag);
+      api
+        .fetchUsersByTag(tag, (users) => {
+          context.commit('setUsers', users)
+        })
+    }
   },
   modules: {
   },
