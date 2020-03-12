@@ -1,6 +1,6 @@
 {
-  "name": "duowu",
-  "version": "0.1.2",
+  "name": "ljhui",
+  "version": "0.1.3",
   "description": "设计的第一个vue框架ui",
   "keywords": [
     "component",
@@ -9,11 +9,11 @@
   ],
   "homepage": "https://github.com/1970186643",
   "license": "MIT",
+  "main": "lib/ljhui.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name duowu --dest lib packages/index.js",
-    "main": "lib/duowu.umd.min.js"
+    "lib": "vue-cli-service build --target lib --name ljhui --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",

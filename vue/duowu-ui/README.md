@@ -6,3 +6,6 @@ npm login 登入npm
 yarn  lib 运行脚本命令
 npm publish --access public 发布npm包
 npm unpublish duowui --force  撤销之前发布的npm包
+
+main参数要放在script外面
+"main": "lib/ljhui.umd.min.js",

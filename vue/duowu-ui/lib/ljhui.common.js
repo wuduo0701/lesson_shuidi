@@ -1,14 +1,5 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["duowu"] = factory();
-	else
-		root["duowu"] = factory();
-})((typeof self !== 'undefined' ? self : this), function() {
-return /******/ (function(modules) { // webpackBootstrap
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -376,5 +367,4 @@ if (typeof window !== 'undefined' && window.Vue) {
 /***/ })
 
 /******/ });
-});
-//# sourceMappingURL=duowu.umd.js.map
+//# sourceMappingURL=ljhui.common.js.map
