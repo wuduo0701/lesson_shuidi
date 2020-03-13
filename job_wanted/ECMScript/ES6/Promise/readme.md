@@ -13,3 +13,29 @@ pending（进行中）、fulfilled（已成功）和rejected（已失败)
 - 从pending变为fulfilled
 - 从pending变为rejected
 发生这两种情况后,状态就凝固了,不会在改变.
+
+.then .catch
+Promise实例的方法
+.then用于处理的函数
+- then方法放回的是新的Prommise的实例(不是原来的实例).因此可以采用链式调用的方法,即then方法后在调用另一个then方法
+.catch用于处理错误的函数
+
+- promise 对象错误既有'冒泡性质',会一直向后传递,直到被捕获为止
+
+不要在then方法中定义reject状态的回调函数(即then的第二个参数),
+建议总是使用catch方法
+即
+promise
+  .then(function(data){
+
+})
+  .catch(function(err){
+
+  })
+  而不要
+promise
+  .then(function(data){
+
+  },  function(err){
+
+  })

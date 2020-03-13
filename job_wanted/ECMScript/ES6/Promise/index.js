@@ -22,6 +22,7 @@ let promise = new Promise(function(reslove, reject){
   console.log('Promise');
   reslove();
 })
+//Promise接受一个函数作为参数，该函数的两个参数分别为resolve和reject，是由js引擎提供的函数。
 promise.then(() => {
   console.log('resolved');
 })
