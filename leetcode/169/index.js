@@ -43,4 +43,10 @@ var majorityElement = function(nums) {
   }
   return majority
 }
-console.log(majorityElement([6,5,5]))
+
+var majorityElement1 = function(nums) {
+  let len = nums.length;
+  let arr = nums.sort();
+  return arr[parseInt(len/2)]
+}
+console.log(majorityElement(array2))
