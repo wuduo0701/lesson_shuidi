@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    {{$store.state.latitude}},{{$store.state.longitude}}
+    {{$store.state.products.all}},{{$store.state.cart}}
   </div>
+  <!-- <prodcuts/> -->
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-
+import ProductList from './components/ProductList'
+import ShoppingCart from './components/ShoppingCart'
 export default {
   name: 'App',
   components: {
     // HelloWorld
+    ProductList,
+    ShoppingCart
   },
   mounted(){
-
+    // console.log(this.$store.state)
+    // this.dispatch()
   }
 }
 </script>
@@ -28,3 +33,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
