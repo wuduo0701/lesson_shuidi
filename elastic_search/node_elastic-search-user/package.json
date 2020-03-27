@@ -1,0 +1,17 @@
+{
+  "name": "node_elastic-search-user",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "elasticsearch": "^16.7.1",
+    "express": "^4.17.1"
+  }
+}
