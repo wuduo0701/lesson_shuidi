@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+    }
+    /* z-index: 1; */
+    /* 调整z轴顺序，z-index:1 提高1层，如果z-index没有用就加position:relative*/
+    /* 该属性设置一个定位元素沿 z 轴的位置，z 轴定义为垂直延伸到显示区的轴。如果为正数，则离用户更近，为负数则表示离用户更远。 */
+    .box2{
+      /* transform: translate3d(0, 0, 0); */
+      will-change: transform;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    box1
+  </div>
+  <div class="box box2">
+    box2
+  </div>
+  <script>
+    const box = document.querySelector('.box');
+    setTimeout(() => {
+      // transform3d可以这个元素提升为独特的一层
+      box.style.transform = 'translate3d(60px, 0, 0)';
+    }, 3000);
+  </script>
+</body>
+</html>
