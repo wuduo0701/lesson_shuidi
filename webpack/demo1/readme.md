@@ -19,3 +19,10 @@ webpack 登场  bundler
     webpack webpack.config.js 配置
   3. rimraf
     删除目录的 编译之前先删除之前已有的dist目录
+  4. 
+  - bundle.js webpack打包生成的代码
+    立即执行函数，
+    将入口，分析出来的依赖，做成一个json
+    boundle 函数执行
+    main.js 他依赖于  index.css
+    __webpack__require__ 他是require的升级版

@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "cross-env": "^7.0.2",
-    "css-loader": "^3.4.2"
+    "css-loader": "^3.4.2",
+    "webpack-chain": "^6.4.0"
   }
 }
