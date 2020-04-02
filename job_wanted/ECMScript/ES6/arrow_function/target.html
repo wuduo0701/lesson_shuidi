@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 函数是js 里的一等公民 new Object()
+    // 函数构造函数来用的， 如何限制， 函数的调用方式一定是new  ? 
+    // const Person = (name) => {
+    //   // 差别， 函数还有其他的功能 this arguments super 
+    //   if(new.target !== undefined) {
+    //     this.name = name;
+    //   } else {
+    //     throw new Error('必须使用new 命令才能生成实例');
+    //   }
+      
+    // } 
+    // let lj = new Person('李广');
+    // console.log(lj.name);
+    // Person('李广'); // throw error
+    // {}
+    var o = Object()
+    console.log(o.__proto__ == Object.prototype)
+    function Myobj(){}
+    typeof Myobj
+    var mo = new Myobj
+  </script>
+</body>
+</html>
