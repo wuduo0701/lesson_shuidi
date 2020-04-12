@@ -1,46 +1,83 @@
-import React, { useState } from 'react';
-// import logo from './logo.svg';
+import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  let book = 'js book';
-  let list = [
-    { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
-    { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
-    { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
-    { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
-    { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
-    { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
-    { first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
-    { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 },
-    { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 },
-    { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 },
-    { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 },
-    { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
-  ];
-  const [listState, setListState] = useState(list)
-  // console.log(listState)
-  let hasData = list.length > 0;  //判断有无数据
-  // console.log(hasData)
-  //列表的渲染 ， jsx 自动展开数组
-  // let arr = [<li>0</li>, <li>0</li>, <li>0</li>];
-  const listEle = listState.map((person, i) => {
+class A extends React.Component {
+  // state = {
+  //   x: 0,
+  //   y: 0,
+  // }
+  // componentDidMount() {
+  //   document.body.addEventListener('mouseover', (e) => {
+  //     // console.log(e.clientX, e.clientY)
+  //     this.setState({
+  //       x: e.clientX,
+  //       y: e.clientY
+  //     })
+  //   })
+  // }
+  render() {
+    const { x, y } = this.props;
     return (
-      //key 区分我们前后两次的节点 可不可以复用(要不要销毁在复用)
-    <li key={i}>姓名:{person.first} {person.last}, 享年:{person.passed - person.year}</li>
+      <div>
+        x: { x } - y: { y }
+      </div>
     )
-  })
-  // console.log(list)
-  setTimeout(() => {
-    let newDate = list.slice(0, list.length -1)
-    setListState(newDate)
-  }, 3000);
-  return (
-    <div>
-      {book}
-      { hasData ? listEle : <em>暂无数据</em>}
-    </div>
-  );
+  }
 }
-
+// 1: state
+// 2: did addEvent
+class B extends React.Component {
+  render() {
+    const { x, y } = this.props;
+    return (
+       <div>
+         <h2>x:{x}</h2>
+         <h3>x:{y}</h3>
+       </div>
+    );
+  }
+}
+// 高阶组件：我们组件内部公共的代码抽离出来
+// 其实是一个方法
+function WithMouseInfo(Com) {
+  class MouseXy extends React.Component {
+    // 公共的代码抽离出来
+    // 1
+    state = {
+      x: 0,
+      y: 0,
+    }
+    // 2
+    componentDidMount() {
+      document.body.addEventListener('mouseover', (e) => {
+        // console.log(e.clientX, e.clientY)
+        this.setState({
+          x: e.clientX,
+          y: e.clientY
+        })
+      })
+    }
+    // 该渲染什么 东西 ？？？？? ?
+    render() {
+      const {x, y} = this.state;
+      return (
+         <Com x={ x } y={ y } />
+      );
+    }
+  }
+  return MouseXy;
+}
+const AXy = WithMouseInfo(A);
+const BXy = WithMouseInfo(B);
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <AXy />
+        <BXy />
+      </div>
+    )
+  }
+}
 export default App;
