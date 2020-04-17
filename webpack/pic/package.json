@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "name": "pic",
+  "description": "css stylus  png fonts postcss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --open",
+    "built": "webpack-dev-server --inline --hot --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
