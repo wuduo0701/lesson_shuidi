@@ -1,6 +1,6 @@
 const config = {
-  projectName: 'ultro-club',
-  date: '2020-1-7',
+  projectName: 'ultra-club',
+  date: '2020-4-23',
   designWidth: 750,
   deviceRatio: {
     '640': 2.34 / 2,
@@ -19,7 +19,13 @@ const config = {
     plugins: [
       'transform-decorators-legacy',
       'transform-class-properties',
-      'transform-object-rest-spread'
+      'transform-object-rest-spread',
+      ['transform-runtime', {
+        'helpers': false,
+        'polyfill': false,
+        'regenerator': true,
+        'moduleName': 'babel-runtime'
+      }]
     ]
   },
   plugins: [],
