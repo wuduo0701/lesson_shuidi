@@ -1,11 +1,13 @@
 import React, { Component} from 'react';
 import TodoItem from './TodoItem';
 import './style.css';
+import Test from './Test'
 // Fragment占位符 不需要在外层在包裹一个额外的div标签
 // react原则上不允许在最外层出现多个同级的标签，而在外面在包裹一层会显得多余，Fragment可以解决
 class TodoList extends Component {
   constructor(props) {
     super(props); //继承参数
+    //当组件的state和
     this.state = {
       inputValue: '',
       list: []
@@ -15,6 +17,7 @@ class TodoList extends Component {
     this.handleItemDelete = this.handleItemDelete.bind(this);
   }
   render() {
+    // console.log('render')
     // <>空标签相当于<Fragments>
     return (
       <>    
@@ -33,6 +36,7 @@ class TodoList extends Component {
         <ul>
           {this.getTodoItem()}
         </ul>
+        <Test content={this.state.inputValue}/>
       </>     
     )
   }
