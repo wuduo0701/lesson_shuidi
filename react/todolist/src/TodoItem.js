@@ -7,14 +7,26 @@ class TodoItem extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
-
+  shouldComponentUpdate(nextProps, nextState) {
+    if(nextProps.content !== this.props.content){
+      return true;
+    }
+    return false
+  }
   render() {
+    // console.log('child render')
     const { content } = this.props;   //从父组件里传值过来
     return (
       <div onClick={this.handleClick}>
         {content}
       </div>
     )
+  }
+  //生命周期函数
+  // 一个组件要从父组件接受参数
+  // 只要父组件的render函数被重新执行，子组件的这个生命周期函数函数就会被执行
+  componentWillReceiveProps() {
+    console.log('componentWillReceiveProps')
   }
   handleClick() {
     // alert(this.props.index)
@@ -27,7 +39,7 @@ class TodoItem extends Component {
 }
 //注意这里的propTypes这里式小写的p，是一个属性
 TodoItem.propTypes = {    //对TodoItem的传值做校验
-  content: PropTypes.string,
+  content: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   handleItemDelete: PropTypes.func,
   index: PropTypes.number,
   // test: PropTypes.string.isRequired //test必须传值

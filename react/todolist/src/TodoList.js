@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import TodoItem from './TodoItem';
+import axios from 'axios';
 import './style.css';
-import Test from './Test'
 // Fragment占位符 不需要在外层在包裹一个额外的div标签
 // react原则上不允许在最外层出现多个同级的标签，而在外面在包裹一层会显得多余，Fragment可以解决
 class TodoList extends Component {
@@ -16,8 +16,12 @@ class TodoList extends Component {
     this.handleBtnClick = this.handleBtnClick.bind(this);
     this.handleItemDelete = this.handleItemDelete.bind(this);
   }
+  //生命周期函数， 在挂载之前被执行
+  // componentWillMount() {
+  //   console.log('componentWillMount')
+  // }
   render() {
-    // console.log('render')
+    console.log('render')
     // <>空标签相当于<Fragments>
     return (
       <>    
@@ -30,16 +34,39 @@ class TodoList extends Component {
             className = 'input'
             value={this.state.inputValue}
             onChange={this.handleInputChange}
+            ref={(input) => {this.input = input}}
           />
           <button onClick={this.handleBtnClick}>提交</button>
         </div>
         <ul>
           {this.getTodoItem()}
         </ul>
-        <Test content={this.state.inputValue}/>
       </>     
     )
   }
+  componentDidMount() {
+    axios.get('/api/todolist')
+      .then(res => {
+        console.log(res);
+      })
+      .catch(() => {
+        console.log('error')
+      })
+  }
+  //组件更新之前发生，相当于询问你组件需要更新嘛？需要返回true or false
+  // shouldComponentUpdate() {
+  //   console.log('shouldComponentUpdate')
+  //   return true;
+  // }
+  // 组件更新之前发生,会自动执行，但是在shouldComponentUpdate之后
+  // 如果shouldComponentUpdate返回true，则他才执行
+  // 否则不会执行接下来的步骤
+  // componentWillUpdate() {
+  //   console.log('componentWillUpdate')
+  // }
+  // componentDidUpdate() {
+  //   console.log('componentDidUpdate')
+  // }
   getTodoItem() {
     return this.state.list.map((item, index) => {
       return (
@@ -65,7 +92,7 @@ class TodoList extends Component {
   }
   handleInputChange(e) {
     // console.log(e.target.value)
-    const value = e.target.value; 
+    const value = this.input.value; 
     // 尽可能的往this.setState里传递一个函数而不是一个对象
     // this.setState({
     //   inputValue: e.target.value

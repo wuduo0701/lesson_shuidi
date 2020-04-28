@@ -1,12 +1,13 @@
 ## React学习
 
-// Fragment占位符 不需要在外层在包裹一个额外的div标签
-// react原则上不允许在最外层出现多个同级的标签，而在外面在包裹一层会显得多余，Fragment可以解决
+- constructor组件创建的时候第一个执行的函数
+Fragment占位符 不需要在外层在包裹一个额外的div标签
+react原则上不允许在最外层出现多个同级的标签，而在外面在包裹一层会显得多余，Fragment可以解决
 
-// 尽可能的往this.setState里传递一个函数而不是一个对象
-//this.setState是异步的，不要指望它会立即映射为新的值、
-//在事件处理函数是异步的，这样可以确保性能
-// 往setState传递一个函数会保证里面的state为最新的
+尽可能的往this.setState里传递一个函数而不是一个对象
+this.setState是异步的，不要指望它会立即映射为新的值、
+在事件处理函数是异步的，这样可以确保性能
+往setState传递一个函数会保证里面的state为最新的
 
 - Jquery直接操作DOM叫命令式的代码
 - React叫做声明式的开发，面向数据开发，组件化的开发, 视图层的框架
@@ -65,5 +66,47 @@ JSX -> 虚拟DOM(JS 对象) -> 真实的DOM
 
 每个DOM节点都带有一个key，用对应的key进行相互的DON比较，也是diff算法的一部分
 <!-- 这也是为什么尽量不要用index下标来作为key值，index下标一发生改变的时候，key值就会发生相应的改变，这会导致diff算法造成极大的困难。 -->
+- Ajax请求和API接口
+  尽量都放在componentDidMount里使用
+  因为这个函数只会调用一次，且没有任何副作用，其实放在componentWillMount和construcrot里也是可以的，但并不会保证无副作用
+- react-transition-group react开源动画库
+  更好的使用react动画效果
+## 生命周期函数
+指某一个时刻组件会自动执行的函数
+![alt](https://githup.oss-cn-beijing.aliyuncs.com/issue/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png?Expires=1588069542&OSSAccessKeyId=TMP.3Kf5vTjB2e17tGpaMxJW8qpPZasLZCYyVYCs9UkwsotyrM6ygC56etDBLRddp3U3Hpb3myGjsp6SzLp6sNoww5GPE97MQs&Signature=AUYcbEJZUuo6BGv0gI%2BbkxF9gA4%3D)
+### 老版本的生命周期函数
+1. initialization
+在constructor里初始化的数据
+2. Mounting(componentWillMount -> render -> componentDidMount)
+- componentWillMount  在组件挂载之前被执行
+- render      渲染函数，挂载组件
+- componentDidMount   在组件挂载之后被执行
+注： 这两种都只是在组件第一次渲染的时候执行，数据的更新不会影响他们的变化
+3. Updation 数据更新
+  - 对于state数据的更新
+    1. shouldComponentUpdate 组件更新之前发生，相当于询问你组件是否需要更新嘛？需要返回true or false
+    注：如果shouldComponentUpdate返回true，则执行componentWillUpdate 否则，接下来的生命周期都不会被执行
+    2. componentWillUpdate  组件将要更新
+    3. render 更新组件，渲染
+    4. componentDidUpdate 组件更新完成
+  - 对于props的更新(多了第一步的componentWillReceiveProps的生命周期， 相当于询问子组件是否接受了参数，这个生命周期函数只对于子组件有效，放在顶层组件没有效果)
+    1. componentWillReceiveProps  相当于询问子组件是否接受了参数
+    产生条件：
+      一个组件要从父组件接受参数
+      只要父组件的render函数被重新执行，子组件的这个生命周期函数函数就会被执行
+    接下来的步骤同于state数据的更新
+4. Unmounting
+- componentWillUnMount 在组件卸载及销毁之前直接调用
 
+### 新版本的生命周期函数
+![alt](https://githup.oss-cn-beijing.aliyuncs.com/issue/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F-%E6%96%B0.png?Expires=1588079576&OSSAccessKeyId=TMP.3Kf5vTjB2e17tGpaMxJW8qpPZasLZCYyVYCs9UkwsotyrM6ygC56etDBLRddp3U3Hpb3myGjsp6SzLp6sNoww5GPE97MQs&Signature=3KPqbdP4e%2FTgl1grP1I%2FdrnjR%2FU%3D)
 
+- componentWillMount 和 componentWillReceiveProps将会被替换成
+getDerivedStateFromProps函数
+会在调用 render 方法之前调用，并且在初始挂载及后续更新时都会被调用
+
+## 性能优化
+1. react中绑定this指向时放在constructor里，保证绑定只会执行一次，不会做不必要的性能浪费
+2. setState函数有多个时，会被react进行异步的操作，放在一起进行操作，不会浪费性能。
+3. 虚拟DOM的优化
+4. shouldComponentUpdate生命周期函数的使用，可以避免多余的render的浪费
