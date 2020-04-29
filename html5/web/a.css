@@ -1,0 +1,27 @@
+.bgc-attative-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-origin: border-box;
+  width: 100%;
+  height: 400px;
+}
+
+.bgc-attative-img .header.pattern-header {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.cat-title {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 400;
+  padding-right: 15px;
+  border-right: 1px dashed #ddd;
+  color: #676767;
+}

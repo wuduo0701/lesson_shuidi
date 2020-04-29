@@ -24,4 +24,4 @@
 
   5XX 服务器错误
   - 500 internal sever error 表示服务器在执行请求时发生错误。
-  - 503 Service Unavailable 表明服务器暂时处于超负载或正在停机维护，无法处理请求
+  - 503 Service Unavailable 表明服务器暂时处于超负载或正在停机维护，无法处理请求cd

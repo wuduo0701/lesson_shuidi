@@ -16,7 +16,6 @@ func main() { // 入口函数
 	// byte? go 类型 byte  字节流
 	// e.Text = []byte("至从考试一别， 已有两月， 我长发已及腿，我想你也是")//内容
 	// 链接  多行字符
-	e.Text = []byte("至从考试一别， 已有两月， 我长发已及腿，我想你也是")//内容
 	e.HTML = []byte(`
 	<ul>
 		<li><a href="https://juejin.im/post/5e575e02f265da573b0dad5f">百度</a></li>
