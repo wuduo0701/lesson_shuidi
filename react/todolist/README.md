@@ -26,6 +26,7 @@ this.setState是异步的，不要指望它会立即映射为新的值、
 - 使用 PropTypes 进行类型检查
 
 - 当一个组件的state或者props发生改变的时候的，render函数就会被重新执行
+- 无状态组件性能更加，是一个函数，而普通组件是一个类，有更多的生命周期函数
 
 ### 虚拟DOM
 - Reat渲染流程(没有虚拟DOM的时候)
@@ -110,3 +111,16 @@ getDerivedStateFromProps函数
 2. setState函数有多个时，会被react进行异步的操作，放在一起进行操作，不会浪费性能。
 3. 虚拟DOM的优化
 4. shouldComponentUpdate生命周期函数的使用，可以避免多余的render的浪费
+
+## Redux
+
+1. store必须唯一的，只有store能改变自己的内容
+2. reducer 拿到之前的数据state， 以及即将改变的数据action
+3. reducer可以接收state的数据，但是绝不能修改state的内容
+4. reducer必须为纯函数(固定的输入就会有固定的输出，而且没有副作用)
+
+## Redux-thunk  redux的中间件
+![alt](https://githup.oss-cn-beijing.aliyuncs.com/issue/Redux-thunk.png?Expires=1588300972&OSSAccessKeyId=TMP.3KeLebSyJsCXxhhuFMuBq1s1X765ztM3FKBn2PSvBoqL6p2C3ax4JJscF4shhRjGEEs4MPfYQQ8LgcS3eN5XecftqejN7Y&Signature=IhGimLKDK%2BKKfwC97sGXWPH9Rcc%3D)
+对redux的dispatch方法做一个升级，在之前redux的action只能为对象，dispath也只处理对象，引入redux-thunk后，它既可以为对象，也可以为函数
+1. 在action里写异步的代码
+2. 没有thunk的话，action必须为一个对象，而不是一个函数
