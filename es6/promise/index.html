@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 前端， 
+  小程序端 
+  页面只是模板  ejs , 数据何来？
+  js 主动拉 fetch ajax  -->
+  <div id="fields"></div>
+  <script>
+  const streetCarsPromise = fetch('http://data.ratp.fr/api/datasets/1.0/search/?q=paris');
+  const postPromise = fetch('https://wesbos.com/wp-json/wp/v2/posts');
+  Promise
+    .all([postPromise,streetCarsPromise])
+    .then(responses => {
+        // console.log(response);
+        return Promise.all([responses.map(res => res.json())])
+        //返回promise
+        // 1. json() 文件流数组 => json() 数组 map
+        // 2. promise 数组 then
+    })
+    .then(responses => {
+        console.log(responses);
+    })
+    
+// postPromise
+//     .then(response => response.json())
+//     .then(data =>{
+//         console.log(data);
+//     })
+  // 等我取数据 
+//   .then(response => response.json())
+//   // 到达的是流数据
+//   .then(res => {
+//     // console.log(res);
+    /consolel
+//     const fields = res.datasets[0].fields;
+//     console.log(fields);
+//     document.getElementById('fields').innerHTML = fields
+//       .map(field => `
+//         <div>
+//           ${field.type}- ${field.name}
+//         </div>`
+//       ).join('')
+//   })
+  </script>
+</body>
+</html>

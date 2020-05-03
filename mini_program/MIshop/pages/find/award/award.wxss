@@ -1,0 +1,26 @@
+.event-list{
+    background-color: #fafbfc;
+    }
+.event-link{
+    margin: 0px 5px 5px 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow:5rpx 8rpx 10rpx rgba(234, 237, 238, 0.26);
+    overflow: hidden;
+  }
+.event-img image{
+    width: 100%;
+}
+.event-content{
+    padding: 25rpx;
+    }
+.event-title{
+        line-height: 1.7em;
+        font-size: 18px;
+    }
+.event-desc{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5em;
+    font-weight: 200;
+}

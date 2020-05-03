@@ -1,0 +1,65 @@
+<!-- 防抖函数 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="unDebounce">
+    <text>没有防抖的input</text>
+    <input type="text">
+  </div>
+  <div id="Debounce">
+    <text>防抖后的input</text>
+    <input type="text">
+  </div>
+<script>
+  // 模拟ajax请求
+  function ajax(content) {
+    console.log('ajax request ' + content)
+  }
+
+  let inputa = document.getElementById('unDebounce')
+  // 按下键盘，就会触发ajax请求 浪费资源
+  inputa.addEventListener('keyup', function (e) {
+    ajax(e.target.value)
+  })
+
+  function debounce(fun, delay){
+    return function(content){
+      //可取消由 setTimeout() 方法设置的 timeout。
+      // 这样就可以重新设置时间，重新计时
+      clearTimeout(fun.id);
+      fun.id = setTimeout(() => {
+        return fun(content)
+      }, delay);
+    }
+  }
+  let debounceAjax = debounce(ajax, 500)
+
+  document.getElementById('Debounce').addEventListener('keyup',(e)=>{
+    debounceAjax(e.target.value)
+  })
+
+
+  // function debounce(fun, delay) {
+  //   return function (args) {
+  //       let _args = args
+  //       //可取消由 setTimeout() 方法设置的 timeout。
+  //       clearTimeout(fun.id)
+  //       fun.id = setTimeout( () => {
+  //           fun.call(this, _args)
+  //       }, delay)
+  //   }
+  // }
+  // let debounceAjax = debounce(ajax, 500)
+
+  // document.getElementById('Debounce').addEventListener('keyup',(e)=>{
+  //   debounceAjax(e.target.value)
+  // })
+</script>
+</body>
+
+</html>

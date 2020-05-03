@@ -1,0 +1,16 @@
+/* pages/list/transform/transform.wxss */
+.transform-display image{
+    width: 80px;height: 80px;
+    }
+  .scale{
+      transform: scale(1,0.5);
+  }
+  .translate{
+      transform: translate(500px,20px);
+  }
+  .rotate{
+      transform: rotate(45deg);
+  }
+  .skew{
+      transform: skew(120deg);
+  }

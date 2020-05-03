@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .img{
+    width: 960px;
+    height: 540px ;
+  }
+</style>
+<body>
+  <img width="960" height="540"
+  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APDf2Y7347+Dfhxrfj7w78atb0/RvG/jCNdN8HX+n6N4vsNZ8V2XiDSU1nxp4wuPGGk6wLW9t7C9+0LpmkWt9D41uLe20vxJe6bYwx3SeDCfEed5PLiLjzijH5xSw2Iq0cHLB4fB1M0c60+XE1K2LzKlX5IW9+EIurWdSMXHFUFc3yLB4/KMwll+X1MFGChTlOn7OvhsNWShGdOFWlh6l+RfBJRaco+822+U8z8XfGX9qrTvFfifT7L9oPVhZ2PiHWrO0Fvol3osAtrXUrmCAQ6PpPiePS9JhESJ5emabGmn2CbbWzRbeKMD4tyrJtUc/wA09im1S58l4c5/Z/Y574Wo+fltzXqVHe95y+J/S13ip1q0pUMFGUqtSUowr5jyxbm21G1eK5U3Ze7HS3urY//Z"
+  alt="" data-src="aa.jpg" class="lazyload">
+  <!-- <img src="aa.jpg" alt=""> -->
+  <script>
+    window.onload = function() {
+      const img = document.querySelector('.lazyload');
+      const real_src = img.getAttribute('data-src');
+      const oImg = document.createElement('img');
+      oImg.onload = function() {
+        setTimeout(() => {
+          img.src = real_src
+        }, 3000)
+      }
+      oImg.src = real_src;
+    }
+    </script>
+  </body>
+  </html>

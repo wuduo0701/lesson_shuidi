@@ -1,0 +1,44 @@
+/* pages/list/filter/filter.wxss */
+.filter-display img{
+    width: 150px;height: auto;
+}
+.blur{
+    filter: blur(8px);
+}
+.grayscale{
+    filter: grayscale(90%);
+}
+.opacity{
+    filter: opacity(25%);
+}
+.multiple{
+    filter: blur(8px) grayscale(90%) opacity(25%);
+}
+.filter-display image{
+  width: 150px;height: auto;
+}
+.grayscale{
+  filter: grayscale(90%);
+}
+.grayscale-hover{
+  filter:grayscale(0);
+}
+
+.blur-bg {
+    width: 750rpx;height: 300rpx;overflow: hidden;
+    background: url(https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/blurimg.jpg);
+    background-size: cover;
+    position: fixed;
+    filter: blur(15px);
+    z-index: -1;   
+}
+.user-img{
+    width: 750rpx;height: 300rpx;
+    display: flex;
+    justify-content: center; 
+    align-items:center;   
+}
+.user-img image {
+  width: 80rpx;height: 80rpx;
+  border-radius: 100%;
+  }

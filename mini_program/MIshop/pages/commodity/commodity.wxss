@@ -1,0 +1,61 @@
+.slides{
+  width: 100%;
+  height: 825rpx;
+}
+.slides .image{
+  width: 100%;
+  height: 825rpx;
+}
+.commodity{
+  height: 180rpx;
+  margin-bottom: 30rpx;
+}
+.commodity text{
+  line-height: 40rpx;
+  word-spacing: 10rpx;
+}
+.commodity text:nth-child(1),.commodity text:nth-child(2),.commodity text:nth-child(3){
+  display: block;
+  margin-left: 30rpx;
+}
+.commodity .title{
+  padding-top: 20rpx;
+  font-size: 11pt;
+}
+.commodity .detial{
+  font-size: 12px;
+  color: #c0c0c0;
+  word-wrap: break-word;
+}
+.commodity .price{
+  font-size: 16px;
+  color: #ff4a00;
+}
+.weui-cells.select {
+  margin-top: 10rpx;
+}
+.weui-cell__bd.selected text {
+  display: inline-block;
+  margin-left: 30rpx;
+  font-size: 11pt;
+}
+.weui-cell__bd.selected text:nth-child(1) {
+  margin-left: 0;
+}
+.weui-cell__subtitle,
+.weui_cell__num {
+  font-size: 10pt;
+  color: #c0c0c0;
+}
+.weui-cell__bd.intro {
+  font-size: 12px;
+  color: #000;
+}
+.weui-cell__hd.success image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+.i1{
+  width: 100%;
+}

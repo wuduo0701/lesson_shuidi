@@ -1,0 +1,53 @@
+<!-- 节流函数 -->
+<!-- 一定时间内只能触发一次函数，无论函数被调用多少次 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>节流Demo</title>
+</head>
+<body>
+  <div id="common">
+    <text>正常的input</text>
+    <input type="text">
+  </div>
+  <div id="jieliu">
+    <text>节流后的input</text>
+    <input type="text">
+  </div>
+<script>
+  //模拟ajax请求
+  function ajax(content){
+    console.log(content);
+  }
+  // 节流函数
+  function jieliu(fun, delay){
+    let last, deferTimer;
+    return function(content){
+      let now = +new Date();
+      if(last && now < last + delay){
+        clearTimeout(deferTimer);
+        deferTimer = setTimeout(() => {
+          last = now;
+          return fun(content)
+        }, delay);
+      }else{
+        last = now;
+        return fun(content)
+      }
+    }
+  }
+  // 正常的事件监听
+  document.getElementById('common').addEventListener('keyup',(e) =>{
+    ajax(e.target.value)
+  })
+
+  //节流后的监听事件
+  let throttleAjax = jieliu(ajax, 1000)
+  document.getElementById('jieliu').addEventListener('keyup',(e) =>{
+    throttleAjax(e.target.value)
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!-- 自定义导航栏 -->
+<view>
+  <view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      <view class="INinputheader">
+				<image src="../../images/icon/mi.png" mode="widthFix" class="image"/>
+				<text>小米</text>
+        <icon class="INsearchicon" type="search" size="12"/>
+        <navigator url="../search/search">
+            <input class="weui-input" placeholder="搜索商品"/>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 初始界面轮播部分 -->
+<view>
+  <swiper indicator-dots="{{false}}" true autoplay='true' interval='3000' circular='true'>
+        <swiper-item wx:for="{{img_title_Urls}}" wx:for-item="img" wx:key="index">
+            <image src="{{img.url}}" />
+        </swiper-item>
+  </swiper>
+</view>
+<!-- 初始界面按钮图标部分 -->
+<view class="container1">
+    <view class="flex-box" >
+        <view class="list-item" wx:for="{{img_icon_Urls1}}" wx:for-item="icon1" wx:key="index">
+            <navigator url="{{icon1.url}}">
+                <image src="{{icon1.icon_img}}" class="icon-size"/>
+            </navigator>
+        </view> 
+    </view>
+    <view class="flex-box" >
+        <view class="list-item" wx:for="{{img_icon_Urls1}}" wx:for-item="icon1" wx:key="index">
+            <text class="text-center">{{icon1.name}}</text>
+        </view> 
+    </view>
+    <view class="flex-box" >
+        <view class="list-item" wx:for="{{img_icon_Urls2}}" wx:for-item="icon2" wx:key="index">
+            <image src="{{icon2.icon_img}}" class="icon-size"/>
+        </view> 
+    </view>
+    <view class="flex-box" >
+        <view class="list-item" wx:for="{{img_icon_Urls2}}" wx:for-item="icon2" wx:key="index">
+            <text class="text-center">{{icon2.name}}</text>
+        </view> 
+    </view>
+</view>
+<!-- 人气推荐部分 -->
+<view class="section block">
+	<block wx:for="{{recommand}}" wx:key="{{item.id}}">
+        <view class="container2">
+            <view class="box1">
+                <text class="recommand">{{item.name}}</text>
+            </view>
+            <view class="box2">
+                <image src="{{item.img}}" class="p_recommand"/>
+            </view>
+            <view class="box3">
+                <view class="recommand_title">{{item.title}}</view>
+                <view class="recommand_text">{{item.detail}}</view>
+                <view class="recommand_price">{{item.price}}</view>
+            </view>
+        </view>
+		<view class="section goods-list">
+			<block wx:for="{{item.section}}" wx:key="index" wx:for-item="product">
+				<view class="goods-item">
+					<image class="goods-img " src="{{product.img}}" data-pid="{{product.id}}" mode="aspectFill" bindtap="showDetail"/>
+					<text class="title">{{product.title}}</text>
+					<text class="detial">{{product.text}}</text>
+					<text class="price">{{product.price}}</text>
+                    <!-- 折扣 -->
+					<!-- <text class="discount">{{product.discount}}</text> -->
+				</view>
+			</block>
+		</view>
+	</block>
+</view>
+<!-- 猜你喜欢 -->
+<view class="section block">
+	<block wx:for="{{love}}" wx:key="{{item.id}}">
+        <view class="box4">{{item.name}}</view>
+        <view class="section goods-list">
+			<block wx:for="{{item.section}}" wx:key="index" wx:for-item="product">
+				<view class="goods-item">
+					<image class="goods-img" src="{{product.img}}" data-pid="{{product.id}}" mode="aspectFill" bindtap="showDetail"/>
+					<text class="title">{{product.title}}</text>
+					<text class="detial">{{product.text}}</text>
+					<text class="price">{{product.price}}</text>
+                    <!-- 折扣 -->
+					<!-- <text class="discount">{{product.discount}}</text> -->
+				</view>
+			</block>
+		</view>
+	</block>
+</view>

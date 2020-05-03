@@ -1,0 +1,20 @@
+<view class="box">
+  <view class="address" wx:for="{{address}}" wx:key="index">
+    <view class="contaner">
+      <view class="box1">
+        <text class="phone">{{item.phone}}</text>
+        <text class="name">{{item.name}} 收</text>
+      </view>
+      <view class="box1">
+        <text class="phone">{{item.address}}</text>
+        <text class="name">{{item.detail}}</text>
+      </view>
+      <view class="button" bindtap="delete" data-index="{{index}}">
+        <text >删除</text>
+      </view>
+    </view>
+  </view>
+  <navigator  class="user-operation" url="./add_more/add"> 
+    <view class="add">新增收货地址</view>
+  </navigator >
+</view>

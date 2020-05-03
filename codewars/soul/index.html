@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+
+    </div>
+    <script>
+    // root 王岳归来不看山，要看就看岳不群的华山
+    // 文字设置为红色
+        // document.getElementById('root').innerText = '五岳归来不看山，要看就看岳不群的华山';
+        // document.getElementById('root').style.color = 'red';\
+
+        // 上面会对('root')查找两次，消耗内存 
+        // 内存(定义变量)   性能(网页查询性能 id是索引)
+    // const el = document.getElementById('root');
+    // el.innerText = '五岳归来不看山，要看就看岳不群的华山';
+    // el.style.color = 'red';
+    
+
+    // el
+    // .innerText = ''
+    // 它的类型是DOM节点
+    // .style.color = '';
+
+    // $ 函数名
+    function $(cssSelector) {
+    return document.querySelector(cssSelector);
+  }
+
+  // 1. text 函数有自己的需要, 设置innerText
+  // 2. 支持链式, return  结点
+    function text(str, el) {
+        el.innerText = str;
+        return el;
+    }
+
+    function css (type, val, el) {
+        el.style[type] = val;
+        return el;
+    }
+    css('color','red',text('五岳归来不看山，要看就看岳不群的华山',$('#root')));
+    // $('#root')
+        // .innerText = '五岳归来不看山，要看就看岳不群的华山'
+        // .style.color = 'red'; 
+        // 函数组合
+        // 原型？ prototype 定义的方法，是可以找到的 原型的方法放回对象的实例，一直点下去
+
+    // 1. 构建一个类 _$
+    // 2. prototype text css 每个方法都返回 _$实例 $
+    // 3.链式调用
+    // 源码分析课，手写JQuerry
+        $('#root')
+        .text('五岳归来不看山')
+    </script>
+</body>
+</html>

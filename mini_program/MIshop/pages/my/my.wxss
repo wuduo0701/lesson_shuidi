@@ -1,0 +1,85 @@
+.container{
+  padding: 0;
+  background-color: #efefef;
+  height: 100vh;
+}
+.container .box{
+  margin-top: 20rpx;
+  height: 180rpx;
+  background-color: #fff;
+  width: 100vh
+}
+.container .box .image{
+  width: 150rpx;
+  height: 150rpx;
+  padding-top: 15rpx;
+  padding-left: 30rpx;
+  position: relative;
+  right: -180rpx;
+}
+.container .box .name{
+  font-size: 12pt;
+  position: relative;
+  left: 400rpx;
+  top: -130rpx;
+}
+.container .box .id{
+  font-size: 10pt;
+  position: relative;
+  left: 400rpx;
+  top:-110rpx;
+  color: #9c9c9c;
+}
+.container .recommand{
+  margin-top: 20rpx;
+  height: 100rpx;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  top:200rpx;
+}
+.container .recommand image{
+  width: 60rpx;
+  height: 60rpx;
+  padding-left: 60rpx;
+  padding-top: 20rpx;
+}
+.container .recommand text{
+  font-size: 12pt;
+  position: relative;
+  padding-left: 20rpx;
+  top:-15rpx;
+}
+.container .box1{
+  margin-top: 20rpx;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  top: 320rpx;
+  height: 610rpx;
+}
+.box1 .box2{
+  height: 100rpx;
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+}
+.box1 .box2 image{
+  width: 60rpx;
+  height: 60rpx;
+  padding-left: 60rpx;
+  padding-top: 20rpx;
+}
+.box1 .box2 text{
+  font-size: 12pt;
+  position: relative;
+  padding-left: 20rpx;
+  top:-15rpx;
+}
+.line{
+  margin: 0 auto;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  height: 2rpx;
+  background-color: #efefef;
+}

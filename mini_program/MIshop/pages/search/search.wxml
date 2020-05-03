@@ -1,0 +1,7 @@
+<van-search placeholder="搜索商品" value="{{ value }}" background="#FFFFFF"  bind:search="Search"/>
+<view class="box" wx:for="{{good_list}}" wx:key="index">
+  <view data-pid="{{item.id}}" bindtap="showDetail">
+    <text >{{item.name}}</text>
+    <view class="line"></view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/home/imageshow/imageshow.wxml-->
+<!-- 图片剪裁和缩放可以用mode -->
+<!-- rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。 -->
+<view id="imgsection">
+  <view class="title">小程序显示图片</view>
+  <view class="imglist">
+    <image class="img" mode="center" src="/images/back_1.jpg"></image>   
+  </view>
+</view>
+<view class="imglist">
+    <image class="circle" mode="widthFix" src="https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/logo.jpg"></image>
+</view>

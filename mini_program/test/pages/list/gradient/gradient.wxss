@@ -1,0 +1,7 @@
+/* pages/list/gradient/gradient.wxss */
+.gradient-display{
+    background-image: radial-gradient(farthest-corner at 45px 45px , #FF0000 0%, #0000FF 100%);
+    width: 100vw;
+    height: 100vh;
+}
+

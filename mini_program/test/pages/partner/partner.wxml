@@ -1,0 +1,18 @@
+<view>两个数字Number相加：{{love1+flower1}}</view>
+<view>两个字符串String相加：{{love2+flower2}}</view>
+<view>互联网快讯</view>
+<view>{{newstitle[4]}}</view>
+<view>豆瓣电影排名第2、最重要的主演演员名：</view>
+<view>{{movies[1].actor[0].name}}</view>
+<image mode="widthFix" src="{{movies[1].img}}" style="width:300rpx"></image>
+<view>电影名：{{movies[1].name}}</view>
+<view>英文名：{{movies[1].englishname}}</view>
+<view>发行地：{{movies[1].country}}</view>
+<view>发行年份：{{movies[1].year}}</view>
+<view>简述：{{movies[1].desc}}</view>
+<switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
+<button bindtap="switch"> Switch </button>
+<button bindtap="addToFront"> Add to the front </button>
+
+<switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+<button bindtap="addNumberToFront"> Add to the front </button>

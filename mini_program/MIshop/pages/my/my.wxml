@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="box">
+    <view class="image">
+      <open-data type="userAvatarUrl" ></open-data>
+    </view>
+    <view class="name">
+      <open-data type="userNickName" ></open-data>
+    </view>
+    <view class="id">小米ID：2334274657</view>
+  </view>
+  <view class="recommand">
+    <image  src="../../images/icon/recommand.png"/>
+    <text>小米精品推荐</text>
+  </view>
+  <view class="box1">
+    <view class="box2">
+      <image  src="../../images/icon/order.png"/>
+       <text>我的订单</text>
+    </view>
+    <view class="line"></view>
+    <view class="box2">
+      <image  src="../../images/icon/member.png"/>
+       <text>会员中心</text>
+    </view>
+    <view class="line"></view>
+    <view class="box2">
+      <image  src="../../images/icon/ticket.png"/>
+       <text>我的优惠券</text>
+    </view>
+    <view class="line"></view>
+    <view class="box2">
+      <image  src="../../images/icon/F.png"/>
+       <text>我的F码</text>
+    </view>
+    <view class="line"></view>
+    <view class="box2">
+      <image  src="../../images/icon/gift.png"/>
+       <text>我的礼物码</text>
+    </view>
+    <view class="line"></view>
+    <view class="box2">
+      <image  src="../../images/icon/red_packet.png"/>
+       <text>我的红包</text>
+    </view>
+    <view class="line"></view>
+  </view>
+</view>

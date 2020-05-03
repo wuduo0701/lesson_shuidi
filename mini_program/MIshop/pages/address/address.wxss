@@ -1,0 +1,72 @@
+.box{
+  padding: 0;
+  background-color: #efefef;
+  padding-top: 20rpx;
+  height: 100vh;
+}
+.user-operation{
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  z-index: 2;
+  border-top: 1px solid #efefef;
+}
+.add{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  background: #ff6700;
+}
+.line{
+  margin: 0 auto;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: 2rpx;
+  background-color: #D8D8D8;
+}
+.contaner{
+  height: 150rpx;
+  width: 750rpx;
+  margin-top: 2rpx;
+}
+.button{
+  background-color: #ff6700;
+  width: 120rpx;
+  height: 150rpx;
+  position: relative;
+  top:-150rpx;
+  left: 630rpx;
+}
+.button text{
+  color: #fff;
+  padding-left: 30rpx;
+  position: relative;
+  top:20rpx;
+  line-height: 100rpx;
+}
+.address{
+  width: 100vh;
+  height: 150rpx;
+  background-color: #fff;
+}
+.address .box1{
+  height: 75rpx;
+  width: 650rpx
+}
+.address .box1 .phone{
+  width: 180rpx;
+  display:inline-block;
+  padding-left: 20rpx;
+  font-size: 14px;
+}
+.address .box1 .name{
+  padding-left: 10rpx;
+  width: 440rpx;
+  display: inline-block;
+  font-size: 16px;
+}

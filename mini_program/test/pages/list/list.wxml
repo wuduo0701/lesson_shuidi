@@ -1,0 +1,16 @@
+<!--pages/list/list.wxml-->
+<view>
+    <navigator url="./gradient/gradient" class="item-link">渐变色</navigator>
+</view>
+<view>
+    <navigator url="./filter/filter" class="item-link">滤镜</navigator>
+</view>
+<view>
+    <navigator url="./transform/transform" class="item-link">变形属性</navigator>
+</view>
+<view>
+    <navigator url="./transition/transition" class="item-link">过渡属性Transition</navigator>
+</view>
+<view>
+    <navigator url="./Animation/Animation" class="item-link">动画属性Animation</navigator>
+</view>

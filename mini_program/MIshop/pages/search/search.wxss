@@ -1,0 +1,18 @@
+.box{
+  height: 90rpx;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10rpx;
+}
+.box text{
+  text-align: left;
+  line-height: 90rpx;
+  padding-left: 20rpx;
+}
+.line{
+  margin: 0 auto;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  height: 2rpx;
+  background-color: #efefef;
+}

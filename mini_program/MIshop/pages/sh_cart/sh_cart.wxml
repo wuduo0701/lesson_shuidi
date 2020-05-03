@@ -1,0 +1,50 @@
+<view class="container">
+  <view wx:if="{{cart_list == ''}}">
+    <view class="empty">
+      <view class="cart_icon">
+        <image src="../../images/icon/cart_empty.png" mode="aspectFill" />
+      </view>
+      <view class="prompt">购物车还是空的</view>
+      <button type="warn" size="default" class="button" style="background: #ff6600;" bindtap="go">
+        <text >到小米商城逛逛</text>
+      </button>
+    </view>
+  </view>
+  <view wx:else class="mt">
+    <view wx:for="{{cart_list}}" wx:key="index">
+			<view class="weui-slidecells">
+        <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" data-index="{{index}}">
+          <view class="weui-slidecell">
+						<view class="box">
+							<view class="icon">
+								<icon wx:if="{{item.selected}}" type="success" color="rgb(255,103,0)" bindtap="selectList" data-index="{{index}}" size="20" class="i"/>
+								<icon wx:else type="circle" bindtap="selectList" data-index="{{index}}" size="20" color="rgb(255,103,0)" class="i"/>
+							</view>
+							<view class="navi">
+								<navigator url="../commodity/commodity?id={{item.id}}">
+									<image  src="{{item.img_url}}"></image>
+								</navigator>
+							</view>
+							<text class="title">{{item.name}} {{item.version}} {{item.color}}</text>
+							<text class="num">{{item.num}} X</text>
+							<text class="price">　{{item.price}}元</text>
+						</view>
+         	</view>
+        </mp-slideview>
+			</view>				
+    </view>
+    <view class="submit_title">
+			<view class="icon">
+				<icon wx:if="{{selectedAll}}" type="success" size="20" color="rgb(255,103,0)" bindtap="selectAll" class="i1"/>
+				<icon wx:else type="circle" size="20" color="rgb(255,103,0)" bindtap="selectAll" class="i1"/>
+			</view>
+			<text class="all">全选</text>
+			<view class="allprice">
+				<text >合计:</text>
+				<text class="totalprice">　{{totalPrice}}元</text>
+			</view>
+			<view class="submit">结算({{totalNum}})</view>
+    </view>
+		</view>  
+</view>
+

@@ -1,0 +1,23 @@
+/* pages/list/transition/transition.wxss */
+
+.box{width: 150px;height: 150px;cursor: pointer;}
+.bg-color{
+    background-color:green;
+}
+.bg-color-hover{
+    background-color: yellow;
+    transition: background-color 5s ease-out 3s;
+}
+.animatebox {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #4a9d64;
+    transition:width 2s, height 2s, background-color 2s, transform 2s;
+}
+.animatebox-hover {
+    background-color: #cd584a;
+    width:200px;
+    height:200px;
+    transform:rotate(180deg);
+}

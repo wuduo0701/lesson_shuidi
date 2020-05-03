@@ -1,0 +1,8 @@
+<!-- html标签？ wxml文件
+wxapp view 相当于 html div 小程序内置组件
+swiper 组件之所以叫组件？ html + css +js 功能更加强大
+组件化时代是最伟大的提升 
+vant-button 来自于有赞
+-->
+<van-button square type="primary" block bind:click="navigateToAdd">新增数据</van-button>
+<van-button square type="primary" block bind:click="navigateToList">数据列表</van-button>
